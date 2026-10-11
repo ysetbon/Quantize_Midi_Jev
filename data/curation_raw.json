@@ -1,0 +1,161 @@
+{
+ "picks": {
+  "K331-3/Stahievitch02/3": {
+   "id": "K331-3/Stahievitch02/3",
+   "rhythm_type": "simple eighths",
+   "reason": "Plain run of four eighth-note onsets (0, 1/2, 1, 3/2) with chordal accompaniment; the basic baseline case, no ornaments."
+  },
+  "K331-3/Stahievitch02/7": {
+   "id": "K331-3/Stahievitch02/7",
+   "rhythm_type": "held note then sixteenths",
+   "reason": "Long opening note held a full beat, then four sixteenths in beat 2; tests held-note and sparse-onset handling."
+  },
+  "K331-3/Stahievitch02/12": {
+   "id": "K331-3/Stahievitch02/12",
+   "rhythm_type": "32nd-note turn (ornament stress)",
+   "reason": "Fast 32nd-note figure (1/8-quarter gaps) leading into quarter/eighth notes; one ornament note; stress case 1 of 2."
+  },
+  "K331-3/Stahievitch02/16": {
+   "id": "K331-3/Stahievitch02/16",
+   "rhythm_type": "eighth plus sixteenth mix",
+   "reason": "Eighth then sixteenth groups (0, 1/2, 1, 5/4, 3/2, 7/4), a typical mixed-subdivision bar of the theme, no ornaments."
+  },
+  "K331-3/Stahievitch02/19": {
+   "id": "K331-3/Stahievitch02/19",
+   "rhythm_type": "syncopated/held quarter then eighths",
+   "reason": "Held quarter followed by two eighths (0, 1, 3/2), an uneven long-short pattern; 7 played notes."
+  },
+  "K331-3/Stahievitch02/26": {
+   "id": "K331-3/Stahievitch02/26",
+   "rhythm_type": "continuous sixteenth run",
+   "reason": "Eight even sixteenth onsets across the bar, the movement's main running-sixteenths texture; no ornaments."
+  },
+  "K331-3/Stahievitch02/87": {
+   "id": "K331-3/Stahievitch02/87",
+   "rhythm_type": "rests / sparse onsets",
+   "reason": "Played notes are sparse (7 in total): a lone pitch on the off-beat 1/2 after the downbeat, then a four-note sixteenth fall from beat 2; tests off-beat placement and long gaps."
+  },
+  "K331-3/Stahievitch02/177": {
+   "id": "K331-3/Stahievitch02/177",
+   "rhythm_type": "fast turn plus sixteenths (ornament stress)",
+   "reason": "Triplet-like grace turn before the beat (3 ornament notes) followed by sixteenths; stress case 2 of 2 and the triplet-like rhythm type."
+  },
+  "K331-3/Stahievitch02/205": {
+   "id": "K331-3/Stahievitch02/205",
+   "rhythm_type": "triplet/tuplet cluster, no ornaments",
+   "reason": "Clustered quick tuplet-like notes at the start of beat 1 (31/240, 31/120 offsets) then sixteenths, with ornament_notes = 0, so it adds triplet-like timing without using an ornament slot."
+  },
+  "K331-3/Stahievitch02/221": {
+   "id": "K331-3/Stahievitch02/221",
+   "rhythm_type": "final held chords",
+   "reason": "Closing bar with two big held chords on beats 1 and 2 (only onsets 0 and 1); tests block-chord onset clustering and long durations."
+  },
+  "K332-1/MunA03M/5": {
+   "id": "K332-1/MunA03M/5",
+   "rhythm_type": "syncopated/dotted (quarter, dotted quarter, eighth)",
+   "reason": "Sparse 3-note bar with a dotted-quarter then eighth in the written rhythm, early in the movement."
+  },
+  "K332-1/WuuE02M/12": {
+   "id": "K332-1/WuuE02M/12",
+   "rhythm_type": "dotted sixteenth figure",
+   "reason": "Quarters plus a dotted-eighth/sixteenth pair (3/4 + 1/4 IOIs), a classic dotted rhythm."
+  },
+  "K332-1/TET01/19": {
+   "id": "K332-1/TET01/19",
+   "rhythm_type": "held notes (half + quarter)",
+   "reason": "Long held notes with few onsets (IOIs of 2 and 1), testing sustained-note and duration handling."
+  },
+  "K332-1/MunA03M/36": {
+   "id": "K332-1/MunA03M/36",
+   "rhythm_type": "sixteenth/thirty-second mix (no ornaments)",
+   "reason": "Written 32nd-note content mixed with eighths and sixteenths, with no flagged ornament notes."
+  },
+  "K332-1/ADIG01/40": {
+   "id": "K332-1/ADIG01/40",
+   "rhythm_type": "ornament stress (grace/rolled notes + sixteenths + halves)",
+   "reason": "Stress case: 2 ornament notes plus sixteenth pair, eighth and long notes in one bar."
+  },
+  "K332-1/MunA03M/48": {
+   "id": "K332-1/MunA03M/48",
+   "rhythm_type": "triplets (eighth-note triplets with sixteenth-triplet subdivisions)",
+   "reason": "The movement's triplet passage, chosen from the performer with 0 ornament notes."
+  },
+  "K332-1/WuuE02M/52": {
+   "id": "K332-1/WuuE02M/52",
+   "rhythm_type": "ornament stress (eighths with triplet/32nd flourish)",
+   "reason": "Second and last ornament stress case: eighth-note bar ending in a triplet/32nd flourish, 1 ornament note."
+  },
+  "K332-1/ADIG01/55": {
+   "id": "K332-1/ADIG01/55",
+   "rhythm_type": "simple eighths",
+   "reason": "Baseline continuous-eighth-note bar (6 x 1/2), from the long middle section of eighth-note passages."
+  },
+  "K332-1/TET01/83": {
+   "id": "K332-1/TET01/83",
+   "rhythm_type": "sixteenth run",
+   "reason": "Twelve continuous sixteenth notes (all IOIs 1/4), a pure sixteenth-note run."
+  },
+  "K332-1/TET01/125": {
+   "id": "K332-1/TET01/125",
+   "rhythm_type": "whole-bar hold (dotted half / chord)",
+   "reason": "A single held 3-beat onset with no internal rhythm, testing rests/held notes late in the movement."
+  },
+  "K310-1/Bogdanovitch01/12": {
+   "id": "K310-1/Bogdanovitch01/12",
+   "rhythm_type": "simple eighths",
+   "reason": "Steady run of eight eighth notes, plain baseline rhythm (match 1.0, 32 notes, no ornaments)."
+  },
+  "K310-1/Jia01/7": {
+   "id": "K310-1/Jia01/7",
+   "rhythm_type": "dotted",
+   "reason": "Repeated dotted-eighth + sixteenth pattern (onsets 0, 3/4, 1, 7/4...), a classic dotted rhythm."
+  },
+  "K310-1/LEE_J03/48": {
+   "id": "K310-1/LEE_J03/48",
+   "rhythm_type": "held notes / long values",
+   "reason": "Only onsets at beats 1, 2, 3 with a half-note-length final value: sustained notes over a dense performed texture."
+  },
+  "K310-1/Lo01/15": {
+   "id": "K310-1/Lo01/15",
+   "rhythm_type": "sixteenth run",
+   "reason": "Sixteen written sixteenths in 4/4 with no ornaments, typical running passage for this movement."
+  },
+  "K310-1/Rozanski02/127": {
+   "id": "K310-1/Rozanski02/127",
+   "rhythm_type": "sixteenths then held notes",
+   "reason": "Two beats of sixteenths followed by a rest/held gap and long values, mixing fast and sustained writing."
+  },
+  "K310-1/Rozanski02/119": {
+   "id": "K310-1/Rozanski02/119",
+   "rhythm_type": "sixteenths + 32nds with rest",
+   "reason": "Sixteenths, a one-beat gap, then a run of 32nds: the finest subdivisions in the pool plus a rest."
+  },
+  "K310-1/Lo01/123": {
+   "id": "K310-1/Lo01/123",
+   "rhythm_type": "triplet / turn figure",
+   "reason": "One of the few bars flagged with triplet-like irregular divisions (59/480 IOIs) in a sixteenth context; counts as ornament stress case 1 (ornament_notes=1)."
+  },
+  "K310-1/Jia01/92": {
+   "id": "K310-1/Jia01/92",
+   "rhythm_type": "sixteenths with ornament",
+   "reason": "Plain sixteenth bar where the performance includes 2 rolled/grace notes: ornament stress case 2 (match 0.962)."
+  },
+  "K310-1/Bogdanovitch01/5": {
+   "id": "K310-1/Bogdanovitch01/5",
+   "rhythm_type": "quarters and eighths (syncopated feel)",
+   "reason": "Mixed quarter and eighth values with onsets on the off-beat (0,1,2,5/2,3,7/2), sparse texture with a few notes."
+  },
+  "K310-1/LEE_J03/51": {
+   "id": "K310-1/LEE_J03/51",
+   "rhythm_type": "mixed eighths and sixteenths",
+   "reason": "Combines four eighths with eight sixteenths in one bar, testing transitions between subdivisions."
+  }
+ },
+ "flags": {
+  "K332-1/MunA03M/36": "Opening run is misaligned: pitch 79 played at 0.172s (~0.43 q) is written at position 1 (~0.40s expected, i.e. about 0.57 beat off), and pitch 74 at 0.090s is written at 53/80 (about 0.43 beat off). Odd fractional positions (53/160, 53/80) and an UNMATCHED 76 at 0.202s suggest the fast arpeggio/ornament was matched wrongly.",
+  "K332-1/ADIG01/40": "4 UNMATCHED played notes (pitches 55, 62, 65, 71 at 1.04-1.21s, near the end of the bar, around beat 2.4-2.8), which exceeds the limit of 2. These may be notes belonging to the next bar or missing written notes.",
+  "K332-1/WuuE02M/52": "Played times are not increasing with written positions: pitch 65 at 0.469s is written at 1, but pitch 79 at 0.439s (earlier) is written at 3/2. That note is about 0.2s (~0.47 beat) before its written position. Pitch 77 at 0.533s is written at 253/160 (~0.33 beat off), which suggests a mis-assigned group around beats 1 to 1.5.",
+  "K310-1/Lo01/123": "Pitch 81 played at 1.361s is matched to written position 27/8 (about 1.58s at bar tempo). It was played about 0.2s (roughly 0.45 beat) before the beat-3 chord at 1.372s. Played times are not increasing with written positions (27/8 comes before 3). One played note, pitch 74 at 0.923s, is also UNMATCHED.",
+  "K310-1/Jia01/92": "Pitch 76 played at 1.450s is matched to written position 15/4 (about 1.83s at bar tempo). It was actually played near beat 3, about 0.38s early. Played times are not increasing with written positions (15/4 at 1.450s, then 7/2 at 1.560s, then 3 at 1.569s). Pitch 64 at 1.560s matched to 7/2 is also about 0.14s early. One played note, pitch 71 at 1.229s, is UNMATCHED."
+ }
+}

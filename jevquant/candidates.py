@@ -138,27 +138,43 @@ def _warp(qf: np.ndarray, resid: np.ndarray, p: float, bw: float = 1.0) -> tuple
     return kq, kw
 
 
-def fit(t: np.ndarray, p: float, grid: str, b0: F = F(0), iters: int = 4, warp: bool = True) -> Candidate | None:
-    """Snap onsets to ``grid``; refit tempo + phase; optionally follow rubato."""
+def fit(t: np.ndarray, p: float, grid: str, b0: F = F(0), iters: int = 4, warp: bool = True,
+        anchors: list[tuple[float, float]] | None = None) -> Candidate | None:
+    """Snap onsets to ``grid``; refit tempo + phase; optionally follow rubato.
+
+    Without ``anchors`` the first onset is beat ``b0``.  With anchors (known
+    (time, beat) pairs such as annotated downbeats) the fit is pinned to them
+    instead and the first onset may fall anywhere.
+    """
     p_init = p
-    tm = TimeMap(t[0] - float(b0) * p, p)
+    if anchors:
+        at = np.array([a[0] for a in anchors])
+        aq = np.array([a[1] for a in anchors], float)
+        tm = TimeMap(at[0] - aq[0] * p, p)
+    else:
+        at = aq = np.zeros(0)
+        tm = TimeMap(t[0] - float(b0) * p, p)
+    wa = 3.0  # anchor weight in the least-squares fit
     q = snap(tm.beat(t), grid)
     for it in range(iters + (2 if warp else 0)):
         qf = np.array([float(v) for v in q])
-        if len(set(q)) < 2:
+        if len(set(q)) + len(aq) < 2:
             break
-        A = np.vstack([np.ones_like(qf), qf]).T
-        (a2, p2), *_ = np.linalg.lstsq(A, t, rcond=None)
+        X = np.concatenate([qf, aq])
+        Y = np.concatenate([t, at])
+        W = np.concatenate([np.ones_like(qf), np.full(len(aq), wa)])
+        A = np.vstack([np.ones_like(X), X]).T * W[:, None]
+        (a2, p2), *_ = np.linalg.lstsq(A, Y * W, rcond=None)
         if not (0.8 * p_init < p2 < 1.25 * p_init):
             break
         tm = TimeMap(float(a2), float(p2))
         if warp and it >= 1 and len(set(q)) >= 4:
-            tm = TimeMap(float(a2), float(p2), *_warp(qf, t - (a2 + p2 * qf), p2))
+            tm = TimeMap(float(a2), float(p2), *_warp(X, Y - (a2 + p2 * X), p2))
         q_new = snap(tm.beat(t), grid)
         if q_new == q and it >= (2 if warp else 0):
             break
         q = q_new
-    if q[0] != b0:
+    if not anchors and q[0] != b0:
         return None
     qf = np.array([float(v) for v in q])
     resid = (t - tm.time(qf)) * 1000
@@ -205,10 +221,10 @@ def _count(beat_positions: list[F]) -> str:
     return " ".join(words)
 
 
-def counting(q: list[F]) -> str:
+def counting(q: list[F], n_beats: int | None = None) -> str:
     """Beat-by-beat counting string for a quantized onset list."""
     uniq = sorted(set(q))
-    n_beats = int(floor(uniq[-1])) + 1
+    n_beats = max(n_beats or 0, int(floor(uniq[-1])) + 1)
     per_beat: list[list[F]] = [[] for _ in range(n_beats)]
     for v in uniq:
         per_beat[int(floor(v))].append(v - floor(v))
@@ -252,4 +268,29 @@ def generate(chunk: Chunk, b0: F = F(0), tempo_hints: list[float] = (), grids=No
                 describe(c)
                 if c.key not in out or c.mean_err_ms < out[c.key].mean_err_ms:
                     out[c.key] = c
+    return list(out.values()), t, note_cluster
+
+
+BAR_BEATS = (2, 3, 4, 6)
+
+
+def generate_bar(chunk: Chunk, t_start: float, t_end: float, beats=BAR_BEATS, grids=None) -> tuple[list[Candidate], np.ndarray, list[int]]:
+    """Candidates for one bar whose downbeat times are known (e.g. annotated or
+    from a beat tracker).  Hypotheses: the bar holds ``n`` quarter notes, for each
+    n in ``beats``, times every grid."""
+    t, note_cluster = cluster_onsets([n.onset for n in chunk.perf])
+    grids = grids or list(GRIDS)
+    out: dict[str, Candidate] = {}
+    for n in beats:
+        p = (t_end - t_start) / n
+        for g in grids:
+            c = fit(t, p, g, anchors=[(t_start, 0.0), (t_end, float(n))])
+            if c is None:
+                continue
+            describe(c)
+            c.feats["counting"] = counting(c.q, n)
+            c.feats["quarters_per_bar"] = n
+            c.key = f"{n}|{c.key}"
+            if c.key not in out or c.mean_err_ms < out[c.key].mean_err_ms:
+                out[c.key] = c
     return list(out.values()), t, note_cluster
