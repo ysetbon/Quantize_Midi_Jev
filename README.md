@@ -58,6 +58,64 @@ It answers one `choice` question per onset: whole note, dotted half, half, dotte
 - **Mistakes:** Jev's errors are mostly 16th vs 32nd, sextuplet vs 16th, and grace notes vs 16ths.
 - **Cost:** about 540 input tokens per note, or about 4.2k per bar, roughly 4× round 1. Speed is unchanged at about 0.36 s per bar.
 
+### Round 3: whole ~4-bar passages, no bar lines, BPM given
+
+Here the quantizer gets about 4 bars of a performance and its tempo in BPM (quarter notes per minute, as a DAW gives it), but no bar lines. It must find:
+- the time signature (unless given)
+- the upbeat (pickup) and where bar 1 starts
+- every onset
+- every note's length
+
+Strategy, research and design: [`STRATEGY_round3.md`](STRATEGY_round3.md).
+
+**How it works.**
+- **Code lists every reasonable reading.** For each of 8 time signatures, ~55 start positions (pickups) and 5 rhythm grids, a metrical tempo tracker decodes the whole passage. That gives about 275 readings per passage (`jevquant/tracker.py`, `jevquant/phrase.py`).
+- **A code scorer ranks them**, using bass, accent and long-note evidence on strong beats, bar repetition and timing fit. It is trained on dev passages.
+- **Jev re-ranks the top 8** in one request. Each option is described in words and counting lines, and the Choice is asked twice in reversed order to cancel order bias.
+- **Note lengths:** a code timing model ranks the options for each note, and Jev is asked only where that model is unsure (`jevquant/durations.py`).
+
+**Test set.** 52 eval passages and 39 dev passages from 13 pieces, with no written bars shared between the two sets:
+- Mozart, Haydn, Beethoven, Chopin, Schubert and Bach
+- 2/4, 3/4, 4/4, 2/2, 3/8 and 6/8
+- each passage is cut at a random beat, so 60% start with a pickup
+
+| 52 eval passages | Upbeat right | Bar 1 right | Notes right | Passage exact | Input tokens |
+|---|---|---|---|---|---|
+| **Time signature given** | | | | | |
+| Tracker alone (lowest cost) | 25% | 19% | 21% | 8% | – |
+| Code scorer | 25% | 21% | 28% | 13% | – |
+| Jev re-ranks code shortlist | **29%** | **23%** | 26% | 13% | 3,673 |
+| Best option in Jev's shortlist (ceiling) | 90% | 50% | 62% | 25% | – |
+| **Time signature unknown** | | | | | |
+| Code scorer | 6% | 4% | 20% | 4% | – |
+| Jev re-ranks code shortlist | **10%** | **10%** | 23% | 8% | 3,719 |
+| Best option in Jev's shortlist (ceiling) | 29% | 17% | 52% | 12% | – |
+
+"Upbeat right" means the right time signature and the right pickup length. "Bar 1 right" also requires every note of the pickup and bar 1 at its written position.
+
+| Note lengths (notes whose onset is right) | Legato rule | Code timing model | Jev | Jev × code |
+|---|---|---|---|---|
+| Best structure in the shortlist (875 notes) | 41% | **62%** | 42% | 62% (weight tuned to 0) |
+| End to end, time signature unknown (262 notes) | 33% | **54%** | 34% | 54% |
+
+What this shows:
+- **4 bars are much harder than 1 bar.** Rubato builds up over 4 bars, so one rhythm slip shifts every later note. Only 25% of passages have an exactly correct reading anywhere among the ~275 candidates. A single-tempo grid fit (rounds 1–2) failed outright, which is why a tempo-tracking Viterbi decoder was needed.
+- **The given BPM is essential.** Without it, the tracker cannot tell triplet eighths at 240 from sixteenths at 180.
+- **The upbeat is a selection problem, not a candidate problem.** With the time signature given, the right upbeat is in Jev's shortlist 90% of the time, but code picks it 25% of the time and Jev 29%. Jev was slightly better than the code scorer on eval and worse on dev, so the tuned Jev weight came out at 0. Read this as "about the same as code", not as a win.
+- **Jev's confidence still flags its good answers.** With the time signature given, Jev was right on all 4 passages where its confidence was ≥ 0.5, and on 11 of 48 below that. That's too few confident answers to use for routing.
+- **Note lengths:** the code timing model (held time vs. written length, a legato bonus, a simplicity prior) beats the old legato rule by 20 points. Jev, asked per note in words, is no better than the rule and adds nothing on top of the code model.
+- **Cost:** about 3.7k input tokens per passage for the structure question and about 3.2k for the gated note-length questions. Latency is 0.34–0.37 s per request.
+
+```bash
+python3 scripts/run_passages.py      # round 3 (fetches extra ASAP pieces; Jev answers cached)
+python3 -m jevquant passage perf.mid --bpm 120 --start 12.5 --end 21 [--timesig 3/4] -o out.musicxml
+```
+
+**Next steps that would move the round 3 numbers.**
+- **Make the upbeat question atomic.** Code already has the right upbeat in the shortlist 90% of the time (meter given). Ask Jev one narrow question per upbeat option ("does bar 1 start on the note with the new bass and the longest value?") rather than one Choice over full 4-bar readings.
+- **Re-quantize bar by bar once the bar lines are fixed.** That stops one slip from spreading (rounds 1–2 got 77% of single bars exact with known downbeats).
+- **Use more dev passages.** The code scorer scored 59% upbeats on dev but 25% on eval, which means 39 dev passages are too few to train it.
+
 ## How it works
 
 Jev answers classification questions (yes/no, choice, score); it can't write
@@ -125,7 +183,8 @@ python3 -m jevquant quantize perf.mid --annotations perf_annotations.txt --times
 
 ```
 jevquant/   model, synth (synthetic data), midi_io, asap (real bars), candidates,
-            jev (client + cache), selectors, bench, notation, __main__ (CLI)
+            jev (client + cache), selectors, bench, notation, notevalues (round 2),
+            passage + tracker + phrase + durations (round 3), __main__ (CLI)
 scripts/    pool/selection, benchmark, Sonnet scoring, report page builders
 results/    summary.json, records.jsonl, payloads.json, bars_detail.json, report page
 examples/   K.332 i bars 1-8 quantized by Jev and by the rule (MusicXML)

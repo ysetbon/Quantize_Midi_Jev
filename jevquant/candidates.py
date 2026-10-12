@@ -114,7 +114,8 @@ class TimeMap:
         return self.a + self.p * np.asarray(q, float) + np.interp(q, self.kq, self.kw)
 
     def beat(self, t):
-        lo, hi = self.kq[0] - 8, self.kq[-1] + 8
+        rough = (np.atleast_1d(np.asarray(t, float)) - self.a) / self.p  # cover long passages too
+        lo, hi = min(self.kq[0], rough.min()) - 8, max(self.kq[-1], rough.max()) + 8
         qs = np.linspace(lo, hi, int((hi - lo) * 96) + 1)
         ts = self.time(qs)
         ts = np.maximum.accumulate(ts)  # keep monotonic for the inverse

@@ -1,0 +1,326 @@
+{
+ "eval": {
+  "ts_unknown": {
+   "tracker": {
+    "ts_ok": 0.077,
+    "upbeat_ok": 0.0,
+    "bar1_ok": 0.0,
+    "pickup_ok": 0.0,
+    "onset_acc": 0.175,
+    "gap_acc": 0.761,
+    "exact": 0.0,
+    "n": 52
+   },
+   "code": {
+    "ts_ok": 0.346,
+    "upbeat_ok": 0.058,
+    "bar1_ok": 0.038,
+    "pickup_ok": 0.058,
+    "onset_acc": 0.195,
+    "gap_acc": 0.722,
+    "exact": 0.038,
+    "n": 52
+   },
+   "jev": {
+    "ts_ok": 0.327,
+    "upbeat_ok": 0.096,
+    "bar1_ok": 0.096,
+    "pickup_ok": 0.096,
+    "onset_acc": 0.231,
+    "gap_acc": 0.776,
+    "exact": 0.077,
+    "n": 52,
+    "input_tokens_per_passage": 3719,
+    "latency_p50_s": 0.372
+   },
+   "jev+code": {
+    "ts_ok": 0.346,
+    "upbeat_ok": 0.058,
+    "bar1_ok": 0.038,
+    "pickup_ok": 0.058,
+    "onset_acc": 0.195,
+    "gap_acc": 0.722,
+    "exact": 0.038,
+    "n": 52,
+    "input_tokens_per_passage": 3719,
+    "latency_p50_s": 0.372
+   },
+   "oracle": {
+    "ts_ok": 0.365,
+    "upbeat_ok": 0.288,
+    "bar1_ok": 0.173,
+    "pickup_ok": 0.212,
+    "onset_acc": 0.516,
+    "gap_acc": 0.767,
+    "exact": 0.115,
+    "n": 52
+   },
+   "ceiling": {
+    "exact_in_candidates": 0.25,
+    "best_onset_acc": 0.403
+   }
+  },
+  "ts_known": {
+   "tracker": {
+    "ts_ok": 1.0,
+    "upbeat_ok": 0.25,
+    "bar1_ok": 0.192,
+    "pickup_ok": 0.096,
+    "onset_acc": 0.207,
+    "gap_acc": 0.785,
+    "exact": 0.077,
+    "n": 52
+   },
+   "code": {
+    "ts_ok": 1.0,
+    "upbeat_ok": 0.25,
+    "bar1_ok": 0.212,
+    "pickup_ok": 0.192,
+    "onset_acc": 0.278,
+    "gap_acc": 0.799,
+    "exact": 0.135,
+    "n": 52
+   },
+   "jev": {
+    "ts_ok": 1.0,
+    "upbeat_ok": 0.288,
+    "bar1_ok": 0.231,
+    "pickup_ok": 0.173,
+    "onset_acc": 0.255,
+    "gap_acc": 0.822,
+    "exact": 0.135,
+    "n": 52,
+    "input_tokens_per_passage": 3673,
+    "latency_p50_s": 0.338
+   },
+   "jev+code": {
+    "ts_ok": 1.0,
+    "upbeat_ok": 0.25,
+    "bar1_ok": 0.212,
+    "pickup_ok": 0.192,
+    "onset_acc": 0.278,
+    "gap_acc": 0.799,
+    "exact": 0.135,
+    "n": 52,
+    "input_tokens_per_passage": 3673,
+    "latency_p50_s": 0.338
+   },
+   "oracle": {
+    "ts_ok": 1.0,
+    "upbeat_ok": 0.904,
+    "bar1_ok": 0.5,
+    "pickup_ok": 0.404,
+    "onset_acc": 0.615,
+    "gap_acc": 0.828,
+    "exact": 0.25,
+    "n": 52
+   },
+   "ceiling": {
+    "exact_in_candidates": 0.25,
+    "best_onset_acc": 0.403
+   }
+  }
+ },
+ "durations": {
+  "code_model": {
+   "sigma": 0.6,
+   "ratio": 0.7,
+   "legato": 2.5,
+   "cx": 0.8
+  },
+  "jev_exponent_b": 0.0,
+  "gate": 0.8,
+  "structure=oracle": {
+   "legato_rule": 0.407,
+   "code": 0.622,
+   "jev": 0.423,
+   "jev+code": 0.622,
+   "notes": 875,
+   "notes_asked_jev": 407,
+   "input_tokens": 168388,
+   "input_tokens_per_passage": 3238
+  },
+  "structure=jev+code": {
+   "legato_rule": 0.332,
+   "code": 0.542,
+   "jev": 0.344,
+   "jev+code": 0.542,
+   "notes": 262,
+   "notes_asked_jev": 140,
+   "input_tokens": 58713,
+   "input_tokens_per_passage": 1129
+  }
+ },
+ "settings": {
+  "ts_unknown": {
+   "jev_weight_a": 0.0,
+   "scorer": {
+    "err": -4.295,
+    "cx": -0.526,
+    "tup": -0.792,
+    "merge": -0.029,
+    "tempo": 0.958,
+    "db_miss": 1.049,
+    "beat_miss": -5.622,
+    "db_bass": 1.128,
+    "db_acc": 0.684,
+    "db_long": 0.959,
+    "db_dens": 0.042,
+    "beat_bass": 0.283,
+    "beat_acc": -0.021,
+    "beat_long": -0.751,
+    "repeat": 2.655,
+    "sync": 0.598,
+    "pickup": -0.72,
+    "no_pickup": -0.729,
+    "dp_cost": -0.873
+   },
+   "dev": {
+    "tracker": {
+     "ts_ok": 0.077,
+     "upbeat_ok": 0.0,
+     "bar1_ok": 0.0,
+     "pickup_ok": 0.0,
+     "onset_acc": 0.265,
+     "gap_acc": 0.697,
+     "exact": 0.0,
+     "n": 39
+    },
+    "code": {
+     "ts_ok": 0.436,
+     "upbeat_ok": 0.333,
+     "bar1_ok": 0.231,
+     "pickup_ok": 0.256,
+     "onset_acc": 0.4,
+     "gap_acc": 0.736,
+     "exact": 0.179,
+     "n": 39
+    },
+    "jev": {
+     "ts_ok": 0.359,
+     "upbeat_ok": 0.256,
+     "bar1_ok": 0.154,
+     "pickup_ok": 0.205,
+     "onset_acc": 0.306,
+     "gap_acc": 0.753,
+     "exact": 0.103,
+     "n": 39,
+     "input_tokens_per_passage": 3772,
+     "latency_p50_s": 0.38
+    },
+    "jev+code": {
+     "ts_ok": 0.436,
+     "upbeat_ok": 0.333,
+     "bar1_ok": 0.231,
+     "pickup_ok": 0.256,
+     "onset_acc": 0.4,
+     "gap_acc": 0.736,
+     "exact": 0.179,
+     "n": 39,
+     "input_tokens_per_passage": 3772,
+     "latency_p50_s": 0.38
+    },
+    "oracle": {
+     "ts_ok": 0.59,
+     "upbeat_ok": 0.538,
+     "bar1_ok": 0.308,
+     "pickup_ok": 0.41,
+     "onset_acc": 0.53,
+     "gap_acc": 0.73,
+     "exact": 0.231,
+     "n": 39
+    },
+    "ceiling": {
+     "exact_in_candidates": 0.282,
+     "best_onset_acc": 0.487
+    }
+   }
+  },
+  "ts_known": {
+   "jev_weight_a": 0.0,
+   "scorer": {
+    "err": -4.619,
+    "cx": -0.59,
+    "tup": 0.082,
+    "merge": -0.112,
+    "tempo": -2.669,
+    "db_miss": 0.524,
+    "beat_miss": -3.569,
+    "db_bass": 0.548,
+    "db_acc": 0.345,
+    "db_long": 0.785,
+    "db_dens": 0.169,
+    "beat_bass": 0.192,
+    "beat_acc": -0.056,
+    "beat_long": -0.654,
+    "repeat": 0.3,
+    "sync": 0.182,
+    "pickup": -0.671,
+    "no_pickup": -0.58,
+    "dp_cost": -2.081
+   },
+   "dev": {
+    "tracker": {
+     "ts_ok": 1.0,
+     "upbeat_ok": 0.333,
+     "bar1_ok": 0.179,
+     "pickup_ok": 0.128,
+     "onset_acc": 0.218,
+     "gap_acc": 0.742,
+     "exact": 0.051,
+     "n": 39
+    },
+    "code": {
+     "ts_ok": 1.0,
+     "upbeat_ok": 0.59,
+     "bar1_ok": 0.359,
+     "pickup_ok": 0.385,
+     "onset_acc": 0.474,
+     "gap_acc": 0.782,
+     "exact": 0.179,
+     "n": 39
+    },
+    "jev": {
+     "ts_ok": 1.0,
+     "upbeat_ok": 0.41,
+     "bar1_ok": 0.256,
+     "pickup_ok": 0.154,
+     "onset_acc": 0.258,
+     "gap_acc": 0.78,
+     "exact": 0.077,
+     "n": 39,
+     "input_tokens_per_passage": 3740,
+     "latency_p50_s": 0.366
+    },
+    "jev+code": {
+     "ts_ok": 1.0,
+     "upbeat_ok": 0.59,
+     "bar1_ok": 0.359,
+     "pickup_ok": 0.385,
+     "onset_acc": 0.474,
+     "gap_acc": 0.782,
+     "exact": 0.179,
+     "n": 39,
+     "input_tokens_per_passage": 3740,
+     "latency_p50_s": 0.366
+    },
+    "oracle": {
+     "ts_ok": 1.0,
+     "upbeat_ok": 0.974,
+     "bar1_ok": 0.615,
+     "pickup_ok": 0.513,
+     "onset_acc": 0.68,
+     "gap_acc": 0.806,
+     "exact": 0.282,
+     "n": 39
+    },
+    "ceiling": {
+     "exact_in_candidates": 0.282,
+     "best_onset_acc": 0.487
+    }
+   }
+  }
+ },
+ "n_eval": 52,
+ "n_dev": 39
+}

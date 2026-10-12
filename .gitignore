@@ -6,3 +6,4 @@ __pycache__/
 data/*
 !data/eval_bars.json
 !data/curation_raw.json
+!data/passages.json
