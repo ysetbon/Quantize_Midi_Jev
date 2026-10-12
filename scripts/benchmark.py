@@ -1,4 +1,4 @@
-"""Next harmony + exact voicing benchmark on Bach chorales (code vs Jev vs combined).
+"""Benchmark: next harmony + exact voicing on Bach chorales (code vs Jev vs combined).
 
 For a sample of positions in held-out chorales: given the key and the recent
 chords (exact notes), predict the next chord and its exact four-voice notes.
@@ -22,8 +22,8 @@ from concurrent.futures import ThreadPoolExecutor
 from math import log
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from jevharmony.data import build, split_of  # noqa: E402
-from jevharmony.model import (NGram, jev_suggest, label_of, name_of, note_name, soft, state_of,  # noqa: E402
+from nextharmony.data import build, split_of  # noqa: E402
+from nextharmony.model import (NGram, jev_suggest, label_of, name_of, note_name, soft, state_of,  # noqa: E402
                               tonic_pc, voicings)
 
 N_CHORDS, N_VOICINGS, N_SPEC = 15, 8, 3

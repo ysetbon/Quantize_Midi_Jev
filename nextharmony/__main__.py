@@ -1,10 +1,10 @@
 """Suggest the next chord and its exact notes from the recent chords.
 
-  python -m jevharmony --key "A major" --chords "E3 C#4 G#4 E5 | F#3 C#4 A4 D5 | A3 C#4 E4 C#5 | E3 D4 G#4 B4"
+  python -m nextharmony --key "A major" --chords "E3 C#4 G#4 E5 | F#3 C#4 A4 D5 | A3 C#4 E4 C#5 | E3 D4 G#4 B4"
 
 Each chord is four notes, bass to soprano.  Prints the top suggestions (chord
 name, meaning, exact notes) from the code model combined with Jev, using the
-weights tuned by scripts/run_harmony.py (results/harmony_summary.json).
+weights tuned by scripts/benchmark.py (results/harmony_summary.json).
 """
 from __future__ import annotations
 
@@ -36,7 +36,7 @@ def ngram() -> NGram:
 
 
 def main() -> None:
-    ap = argparse.ArgumentParser(prog="jevharmony")
+    ap = argparse.ArgumentParser(prog="nextharmony")
     ap.add_argument("--key", required=True, help='e.g. "A major" or "G minor"')
     ap.add_argument("--chords", required=True, help='recent chords, bass to soprano, separated by "|"')
     ap.add_argument("--top", type=int, default=3)

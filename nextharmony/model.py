@@ -23,7 +23,7 @@ from math import exp, log
 from music21 import chord as m21chord
 from music21 import pitch as m21pitch
 
-from jevquant.jev import ask
+from .jev import ask
 
 TEMPLATES = {  # quality -> intervals above the root (fifth optional for sevenths)
     "maj": (0, 4, 7), "min": (0, 3, 7), "dim": (0, 3, 6), "aug": (0, 4, 8),

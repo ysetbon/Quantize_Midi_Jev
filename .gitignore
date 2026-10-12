@@ -4,6 +4,7 @@ __pycache__/
 .jev_cache/
 .venv/
 data/*
-!data/eval_bars.json
-!data/curation_raw.json
-!data/passages.json
+archive/quantize/data/*
+!archive/quantize/data/eval_bars.json
+!archive/quantize/data/curation_raw.json
+!archive/quantize/data/passages.json
