@@ -3,4 +3,6 @@ __pycache__/
 .pytest_cache/
 .jev_cache/
 .venv/
-data/
+data/*
+!data/eval_bars.json
+!data/curation_raw.json

@@ -1,0 +1,4542 @@
+[
+ {
+  "setting": "meter_unknown",
+  "bars": [
+   {
+    "key": "item_01",
+    "state": {
+     "bar": {
+      "duration_s": 0.78,
+      "notes_played": 10
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 154,
+       "grid": "thirty-second notes",
+       "counting": "1 + | (1/8) + (5/8)",
+       "mean_timing_error_ms": 9,
+       "max_timing_error_ms": 22,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 308,
+       "grid": "eighth-note triplets",
+       "counting": "1 | 1 | 1 | 1 trip",
+       "mean_timing_error_ms": 8,
+       "max_timing_error_ms": 18,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 462,
+       "grid": "eighth notes",
+       "counting": "1 | + | - | 1 | + | 1",
+       "mean_timing_error_ms": 7,
+       "max_timing_error_ms": 15,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 154,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 + | 1 + let",
+       "mean_timing_error_ms": 9,
+       "max_timing_error_ms": 21,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 462,
+       "grid": "sixteenth notes",
+       "counting": "1 | + | - | e | + | 1",
+       "mean_timing_error_ms": 6,
+       "max_timing_error_ms": 9,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 231,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (5/6) | let | trip +",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 8,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "G": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 308,
+       "grid": "thirty-second notes",
+       "counting": "1 | 1 | (1/8) | 1 e",
+       "mean_timing_error_ms": 3,
+       "max_timing_error_ms": 6,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 231,
+       "grid": "sixteenth notes",
+       "counting": "1 a | + | e +",
+       "mean_timing_error_ms": 8,
+       "max_timing_error_ms": 20,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_02",
+    "state": {
+     "bar": {
+      "duration_s": 0.829,
+      "notes_played": 6
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 145,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 | 1 e + let",
+       "mean_timing_error_ms": 11,
+       "max_timing_error_ms": 19,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 434,
+       "grid": "sixteenth notes",
+       "counting": "1 | - | - | 1 a | e | 1",
+       "mean_timing_error_ms": 7,
+       "max_timing_error_ms": 16,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 217,
+       "grid": "sixteenth notes",
+       "counting": "1 | + a | e +",
+       "mean_timing_error_ms": 11,
+       "max_timing_error_ms": 24,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 434,
+       "grid": "eighth-note triplets",
+       "counting": "1 | - | - | 1 let | trip | 1",
+       "mean_timing_error_ms": 3,
+       "max_timing_error_ms": 8,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 290,
+       "grid": "eighths or triplets (per beat)",
+       "counting": "1 | - | 1 + | 1 trip",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 18,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 217,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 | + (5/6) | (1/6) +",
+       "mean_timing_error_ms": 3,
+       "max_timing_error_ms": 9,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "G": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 291,
+       "grid": "eighth notes",
+       "counting": "1 | - | 1 + | 1 +",
+       "mean_timing_error_ms": 8,
+       "max_timing_error_ms": 12,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 145,
+       "grid": "sixteenth notes",
+       "counting": "1 | 1 e + a",
+       "mean_timing_error_ms": 9,
+       "max_timing_error_ms": 13,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_03",
+    "state": {
+     "bar": {
+      "duration_s": 0.825,
+      "notes_played": 16
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 437,
+       "grid": "thirty-second notes",
+       "counting": "1 e | (7/8) | - | e | a | -",
+       "mean_timing_error_ms": 2,
+       "max_timing_error_ms": 5,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 146,
+       "grid": "thirty-second notes",
+       "counting": "1 (1/8) (5/8) | (1/8) (5/8)",
+       "mean_timing_error_ms": 9,
+       "max_timing_error_ms": 13,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 291,
+       "grid": "sixteenth notes",
+       "counting": "1 e | e | e | e",
+       "mean_timing_error_ms": 9,
+       "max_timing_error_ms": 14,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 291,
+       "grid": "thirty-second notes",
+       "counting": "1 (1/8) | e | (1/8) | (1/8)",
+       "mean_timing_error_ms": 4,
+       "max_timing_error_ms": 6,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 437,
+       "grid": "sixteenth notes",
+       "counting": "1 e | a | - | e | a | -",
+       "mean_timing_error_ms": 4,
+       "max_timing_error_ms": 10,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 146,
+       "grid": "eighth notes",
+       "counting": "1 + | 1 +",
+       "mean_timing_error_ms": 16,
+       "max_timing_error_ms": 27,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 1
+      },
+      "G": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 218,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (1/6) | 1 let | trip",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 13,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 219,
+       "grid": "thirty-second notes",
+       "counting": "1 (1/8) (7/8) | (5/8) | (3/8)",
+       "mean_timing_error_ms": 4,
+       "max_timing_error_ms": 12,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_04",
+    "state": {
+     "bar": {
+      "duration_s": 0.824,
+      "notes_played": 12
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 292,
+       "grid": "eighth notes",
+       "counting": "1 | 1 | 1 + | 1 +",
+       "mean_timing_error_ms": 6,
+       "max_timing_error_ms": 12,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 291,
+       "grid": "thirty-second notes",
+       "counting": "1 | 1 | 1 + | 1 (3/8)",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 10,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 218,
+       "grid": "sixteenth notes",
+       "counting": "1 a | + a | e +",
+       "mean_timing_error_ms": 6,
+       "max_timing_error_ms": 17,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 146,
+       "grid": "sixteenth notes",
+       "counting": "1 + | 1 e + a",
+       "mean_timing_error_ms": 6,
+       "max_timing_error_ms": 13,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 145,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 + | 1 (1/6) + let",
+       "mean_timing_error_ms": 7,
+       "max_timing_error_ms": 18,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 219,
+       "grid": "thirty-second notes",
+       "counting": "1 a | + (7/8) | e (5/8)",
+       "mean_timing_error_ms": 6,
+       "max_timing_error_ms": 13,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "G": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 436,
+       "grid": "eighths or triplets (per beat)",
+       "counting": "1 | + | - | 1 let | + | 1",
+       "mean_timing_error_ms": 3,
+       "max_timing_error_ms": 12,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 436,
+       "grid": "eighth notes",
+       "counting": "1 | + | - | 1 + | + | 1",
+       "mean_timing_error_ms": 6,
+       "max_timing_error_ms": 15,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_05",
+    "state": {
+     "bar": {
+      "duration_s": 0.88,
+      "notes_played": 7
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 273,
+       "grid": "quarter notes only",
+       "counting": "1 | - | 1 | 1",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 20,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 273,
+       "grid": "thirty-second notes",
+       "counting": "1 | - | (1/8) | 1",
+       "mean_timing_error_ms": 6,
+       "max_timing_error_ms": 10,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 204,
+       "grid": "sixteenth notes",
+       "counting": "1 | + | e",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 20,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 137,
+       "grid": "eighth-note triplets",
+       "counting": "1 | 1 let",
+       "mean_timing_error_ms": 28,
+       "max_timing_error_ms": 60,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 409,
+       "grid": "eighth notes",
+       "counting": "1 | - | - | 1 | + | -",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 20,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 205,
+       "grid": "eighths or triplets (per beat)",
+       "counting": "1 | + | trip",
+       "mean_timing_error_ms": 12,
+       "max_timing_error_ms": 21,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "G": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 409,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 | - | - | (1/6) | + | -",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 10,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 136,
+       "grid": "eighth notes",
+       "counting": "1 | 1 +",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 20,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_06",
+    "state": {
+     "bar": {
+      "duration_s": 0.807,
+      "notes_played": 14
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 298,
+       "grid": "eighth notes",
+       "counting": "1 + | 1 + | 1 + | 1 +",
+       "mean_timing_error_ms": 4,
+       "max_timing_error_ms": 17,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 149,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 e + a | 1 e + let",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 10,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 447,
+       "grid": "eighths or triplets (per beat)",
+       "counting": "1 let | + | 1 | 1 let | + | 1",
+       "mean_timing_error_ms": 8,
+       "max_timing_error_ms": 17,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 298,
+       "grid": "thirty-second notes",
+       "counting": "1 + | 1 + | 1 + | 1 (3/8)",
+       "mean_timing_error_ms": 3,
+       "max_timing_error_ms": 7,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 223,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 trip let | 1 + (5/6) | (1/6) +",
+       "mean_timing_error_ms": 8,
+       "max_timing_error_ms": 17,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 149,
+       "grid": "sixteenth notes",
+       "counting": "1 e + a | 1 e + a",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 18,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "G": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 446,
+       "grid": "sixteenth notes",
+       "counting": "1 a | + | e | 1 a | + | 1",
+       "mean_timing_error_ms": 4,
+       "max_timing_error_ms": 9,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 223,
+       "grid": "thirty-second notes",
+       "counting": "1 (3/8) a | (1/8) + (7/8) | e +",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 10,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_07",
+    "state": {
+     "bar": {
+      "duration_s": 0.897,
+      "notes_played": 7
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 200,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (5/6) | let | 1 trip let",
+       "mean_timing_error_ms": 7,
+       "max_timing_error_ms": 16,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 402,
+       "grid": "sixteenths or triplets (per beat)",
+       "counting": "1 | let | - | + | e a | +",
+       "mean_timing_error_ms": 2,
+       "max_timing_error_ms": 5,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 267,
+       "grid": "sixteenth notes",
+       "counting": "1 | 1 | e a | 1 +",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 17,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 402,
+       "grid": "sixteenth notes",
+       "counting": "1 | a | - | + | e a | +",
+       "mean_timing_error_ms": 4,
+       "max_timing_error_ms": 8,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 134,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 + | (1/6) trip + (5/6)",
+       "mean_timing_error_ms": 16,
+       "max_timing_error_ms": 23,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 200,
+       "grid": "sixteenths or triplets (per beat)",
+       "counting": "1 a | let | 1 trip let",
+       "mean_timing_error_ms": 7,
+       "max_timing_error_ms": 14,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "G": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 267,
+       "grid": "sixteenths or triplets (per beat)",
+       "counting": "1 | 1 | e a | 1 let",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 23,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 133,
+       "grid": "thirty-second notes",
+       "counting": "1 + | (1/8) (3/8) + a",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 18,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_08",
+    "state": {
+     "bar": {
+      "duration_s": 0.811,
+      "notes_played": 15
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 222,
+       "grid": "thirty-second notes",
+       "counting": "1 (3/8) a | (1/8) + | 1 e (5/8)",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 11,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 296,
+       "grid": "eighths or triplets (per beat)",
+       "counting": "1 + | 1 + | 1 let | 1 +",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 11,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 148,
+       "grid": "sixteenth notes",
+       "counting": "1 e + a | 1 e + a",
+       "mean_timing_error_ms": 6,
+       "max_timing_error_ms": 20,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 296,
+       "grid": "eighth notes",
+       "counting": "1 + | 1 + | 1 + | 1 +",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 19,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 223,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 trip a | e + | 1 e let",
+       "mean_timing_error_ms": 8,
+       "max_timing_error_ms": 25,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 148,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 e + a | 1 trip + a",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 10,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "G": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 445,
+       "grid": "sixteenths or triplets (per beat)",
+       "counting": "1 a | + | trip | 1 | 1 + | trip",
+       "mean_timing_error_ms": 4,
+       "max_timing_error_ms": 9,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 444,
+       "grid": "sixteenth notes",
+       "counting": "1 a | + | e | 1 | 1 + | e",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 11,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_09",
+    "state": {
+     "bar": {
+      "duration_s": 0.787,
+      "notes_played": 11
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 304,
+       "grid": "sixteenth notes",
+       "counting": "e a | e a | e a | a 1 +",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 17,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 459,
+       "grid": "sixteenths or triplets (per beat)",
+       "counting": "e | 1 a | + | trip | e a | a +",
+       "mean_timing_error_ms": 4,
+       "max_timing_error_ms": 9,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 459,
+       "grid": "sixteenth notes",
+       "counting": "e | 1 a | + | e | e a | a +",
+       "mean_timing_error_ms": 4,
+       "max_timing_error_ms": 8,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 309,
+       "grid": "eighth notes",
+       "counting": "1 + | 1 + | 1 + | + 1 +",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 28,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 229,
+       "grid": "thirty-second notes",
+       "counting": "(1/8) + (7/8) | e (5/8) | (7/8) (1/8) (3/8) a",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 10,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 226,
+       "grid": "eighth-note triplets",
+       "counting": "1 trip let | 1 trip let | 1 trip let",
+       "mean_timing_error_ms": 12,
+       "max_timing_error_ms": 30,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "G": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 154,
+       "grid": "sixteenth notes",
+       "counting": "1 e + a | a 1 e + a",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 30,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 154,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 trip + a | a 1 trip + a",
+       "mean_timing_error_ms": 11,
+       "max_timing_error_ms": 31,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_10",
+    "state": {
+     "bar": {
+      "duration_s": 0.925,
+      "notes_played": 11
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 195,
+       "grid": "thirty-second notes",
+       "counting": "1 | (3/8) | -",
+       "mean_timing_error_ms": 6,
+       "max_timing_error_ms": 11,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 259,
+       "grid": "thirty-second notes",
+       "counting": "1 | (7/8) | - | -",
+       "mean_timing_error_ms": 2,
+       "max_timing_error_ms": 2,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 389,
+       "grid": "sixteenth notes",
+       "counting": "1 | - | a | - | - | -",
+       "mean_timing_error_ms": 6,
+       "max_timing_error_ms": 11,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 130,
+       "grid": "quarter notes only",
+       "counting": "1 | 1",
+       "mean_timing_error_ms": 13,
+       "max_timing_error_ms": 25,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 389,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 | - | (5/6) | - | - | -",
+       "mean_timing_error_ms": 1,
+       "max_timing_error_ms": 1,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 195,
+       "grid": "eighth notes",
+       "counting": "1 | + | -",
+       "mean_timing_error_ms": 13,
+       "max_timing_error_ms": 25,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "G": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 260,
+       "grid": "quarter notes only",
+       "counting": "1 | - | 1 | -",
+       "mean_timing_error_ms": 13,
+       "max_timing_error_ms": 25,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   }
+  ]
+ },
+ {
+  "setting": "meter_unknown",
+  "bars": [
+   {
+    "key": "item_11",
+    "state": {
+     "bar": {
+      "duration_s": 1.191,
+      "notes_played": 3
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 101,
+       "grid": "sixteenth notes",
+       "counting": "1 a | a",
+       "mean_timing_error_ms": 21,
+       "max_timing_error_ms": 32,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 201,
+       "grid": "eighth-note triplets",
+       "counting": "1 | trip | - | trip",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 14,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 302,
+       "grid": "quarter notes only",
+       "counting": "1 | - | 1 | - | - | 1",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 14,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 151,
+       "grid": "eighth notes",
+       "counting": "1 | 1 | +",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 14,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 152,
+       "grid": "eighth-note triplets",
+       "counting": "1 | 1 | let",
+       "mean_timing_error_ms": 21,
+       "max_timing_error_ms": 46,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 302,
+       "grid": "thirty-second notes",
+       "counting": "1 | - | (1/8) | - | - | (1/8)",
+       "mean_timing_error_ms": 6,
+       "max_timing_error_ms": 9,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "G": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 101,
+       "grid": "eighth-note triplets",
+       "counting": "1 let | let",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 14,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 202,
+       "grid": "thirty-second notes",
+       "counting": "1 | (3/8) | - | (3/8)",
+       "mean_timing_error_ms": 2,
+       "max_timing_error_ms": 3,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_12",
+    "state": {
+     "bar": {
+      "duration_s": 1.167,
+      "notes_played": 12
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 206,
+       "grid": "eighth-note triplets",
+       "counting": "1 | trip | let | let",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 7,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 206,
+       "grid": "thirty-second notes",
+       "counting": "1 | e | (5/8) | (5/8)",
+       "mean_timing_error_ms": 6,
+       "max_timing_error_ms": 9,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 103,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 let | trip (5/6)",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 7,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 154,
+       "grid": "sixteenth notes",
+       "counting": "1 | 1 | 1 a",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 7,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 154,
+       "grid": "eighth-note triplets",
+       "counting": "1 | 1 | 1 let",
+       "mean_timing_error_ms": 7,
+       "max_timing_error_ms": 17,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 103,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 let | trip a",
+       "mean_timing_error_ms": 12,
+       "max_timing_error_ms": 31,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "G": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 309,
+       "grid": "eighth notes",
+       "counting": "1 | - | 1 | - | 1 | +",
+       "mean_timing_error_ms": 4,
+       "max_timing_error_ms": 7,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 308,
+       "grid": "eighth-note triplets",
+       "counting": "1 | - | 1 | - | 1 | trip",
+       "mean_timing_error_ms": 6,
+       "max_timing_error_ms": 15,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_13",
+    "state": {
+     "bar": {
+      "duration_s": 1.23,
+      "notes_played": 8
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 293,
+       "grid": "sixteenth notes",
+       "counting": "1 e | - | - | - | 1 | -",
+       "mean_timing_error_ms": 8,
+       "max_timing_error_ms": 14,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 195,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (1/6) | - | let | -",
+       "mean_timing_error_ms": 8,
+       "max_timing_error_ms": 14,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 98,
+       "grid": "eighth-note triplets",
+       "counting": "1 | trip",
+       "mean_timing_error_ms": 18,
+       "max_timing_error_ms": 42,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 1
+      },
+      "D": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 293,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (1/6) | - | - | - | 1 | -",
+       "mean_timing_error_ms": 9,
+       "max_timing_error_ms": 14,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 146,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (1/6) | - | 1",
+       "mean_timing_error_ms": 14,
+       "max_timing_error_ms": 21,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 97,
+       "grid": "thirty-second notes",
+       "counting": "1 (1/8) | (3/8)",
+       "mean_timing_error_ms": 15,
+       "max_timing_error_ms": 28,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "G": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 195,
+       "grid": "thirty-second notes",
+       "counting": "1 (1/8) | - | a | -",
+       "mean_timing_error_ms": 8,
+       "max_timing_error_ms": 10,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 146,
+       "grid": "thirty-second notes",
+       "counting": "1 (1/8) | - | 1",
+       "mean_timing_error_ms": 8,
+       "max_timing_error_ms": 14,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_14",
+    "state": {
+     "bar": {
+      "duration_s": 1.214,
+      "notes_played": 14
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 148,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 + let | 1 trip + let | 1 trip + let",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 15,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 297,
+       "grid": "eighth-note triplets",
+       "counting": "1 | 1 trip | 1 let | 1 trip | 1 let | 1 trip",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 15,
+       "beats_with_tuplets": 5,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 99,
+       "grid": "thirty-second notes",
+       "counting": "1 (3/8) + (5/8) (7/8) | 1 (1/8) (3/8) + (5/8) a",
+       "mean_timing_error_ms": 17,
+       "max_timing_error_ms": 34,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 149,
+       "grid": "thirty-second notes",
+       "counting": "1 + (5/8) | 1 (3/8) + (5/8) | 1 (3/8) + a",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 25,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 99,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 trip + let (5/6) | 1 (1/6) trip + let (5/6)",
+       "mean_timing_error_ms": 17,
+       "max_timing_error_ms": 37,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 296,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 | 1 trip | 1 let | 1 trip | 1 let (5/6) | trip",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 13,
+       "beats_with_tuplets": 5,
+       "distinct_played_onsets_merged": 0
+      },
+      "G": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 197,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 let | 1 trip a | 1 e let | 1 e +",
+       "mean_timing_error_ms": 11,
+       "max_timing_error_ms": 33,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 198,
+       "grid": "thirty-second notes",
+       "counting": "1 (5/8) (7/8) | (3/8) a | 1 e (5/8) | (1/8) e (5/8)",
+       "mean_timing_error_ms": 7,
+       "max_timing_error_ms": 17,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_15",
+    "state": {
+     "bar": {
+      "duration_s": 1.104,
+      "notes_played": 8
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 162,
+       "grid": "eighth-note triplets",
+       "counting": "1 let | 1 let | 1 trip",
+       "mean_timing_error_ms": 31,
+       "max_timing_error_ms": 53,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 163,
+       "grid": "eighth notes",
+       "counting": "1 + | 1 + | 1 +",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 10,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 327,
+       "grid": "quarter notes only",
+       "counting": "1 | 1 | 1 | 1 | 1 | 1",
+       "mean_timing_error_ms": 4,
+       "max_timing_error_ms": 8,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 109,
+       "grid": "thirty-second notes",
+       "counting": "1 (3/8) (5/8) | 1 (3/8) (5/8)",
+       "mean_timing_error_ms": 13,
+       "max_timing_error_ms": 32,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 109,
+       "grid": "eighth-note triplets",
+       "counting": "1 trip let | 1 trip let",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 11,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 218,
+       "grid": "eighth-note triplets",
+       "counting": "1 let | trip | 1 let | trip",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 10,
+       "beats_with_tuplets": 4,
+       "distinct_played_onsets_merged": 0
+      },
+      "G": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 217,
+       "grid": "thirty-second notes",
+       "counting": "1 a | (3/8) | 1 (5/8) | e",
+       "mean_timing_error_ms": 6,
+       "max_timing_error_ms": 12,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_16",
+    "state": {
+     "bar": {
+      "duration_s": 1.087,
+      "notes_played": 15
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 110,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 e trip + let a | 1 e trip + let a",
+       "mean_timing_error_ms": 16,
+       "max_timing_error_ms": 43,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 165,
+       "grid": "sixteenth notes",
+       "counting": "1 e + a | 1 e + a | 1 e + a",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 10,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 110,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (1/6) trip + let (5/6) | 1 (1/6) trip + let (5/6)",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 10,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 221,
+       "grid": "eighth-note triplets",
+       "counting": "1 trip let | 1 trip let | 1 trip let | 1 trip let",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 10,
+       "beats_with_tuplets": 4,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 331,
+       "grid": "eighth notes",
+       "counting": "1 + | 1 + | 1 + | 1 + | 1 + | 1 +",
+       "mean_timing_error_ms": 4,
+       "max_timing_error_ms": 9,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 331,
+       "grid": "thirty-second notes",
+       "counting": "1 + | 1 + | 1 + | (1/8) (5/8) | 1 + | (1/8) +",
+       "mean_timing_error_ms": 4,
+       "max_timing_error_ms": 10,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "G": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 221,
+       "grid": "thirty-second notes",
+       "counting": "1 (3/8) (5/8) | 1 e (5/8) | 1 (3/8) (5/8) | 1 (3/8) (5/8)",
+       "mean_timing_error_ms": 6,
+       "max_timing_error_ms": 13,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 166,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (1/6) + let | 1 (1/6) + (5/6) | 1 trip + let",
+       "mean_timing_error_ms": 16,
+       "max_timing_error_ms": 26,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_17",
+    "state": {
+     "bar": {
+      "duration_s": 1.514,
+      "notes_played": 3
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 238,
+       "grid": "quarter notes only",
+       "counting": "1 | - | - | - | - | -",
+       "mean_timing_error_ms": 2,
+       "max_timing_error_ms": 2,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 119,
+       "grid": "quarter notes only",
+       "counting": "1 | - | -",
+       "mean_timing_error_ms": 2,
+       "max_timing_error_ms": 2,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 159,
+       "grid": "quarter notes only",
+       "counting": "1 | - | - | -",
+       "mean_timing_error_ms": 2,
+       "max_timing_error_ms": 2,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 79,
+       "grid": "quarter notes only",
+       "counting": "1 | -",
+       "mean_timing_error_ms": 2,
+       "max_timing_error_ms": 2,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_18",
+    "state": {
+     "bar": {
+      "duration_s": 1.699,
+      "notes_played": 32
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 212,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (5/6) | + | (1/6) | 1 (1/6) let | + | (1/6)",
+       "mean_timing_error_ms": 7,
+       "max_timing_error_ms": 18,
+       "beats_with_tuplets": 4,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 141,
+       "grid": "thirty-second notes",
+       "counting": "1 + | 1 + | 1 (1/8) + | 1 +",
+       "mean_timing_error_ms": 9,
+       "max_timing_error_ms": 17,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 106,
+       "grid": "sixteenths or triplets (per beat)",
+       "counting": "1 trip let | 1 + a | e +",
+       "mean_timing_error_ms": 22,
+       "max_timing_error_ms": 38,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 1
+      },
+      "D": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 106,
+       "grid": "thirty-second notes",
+       "counting": "1 (3/8) a | (1/8) + (7/8) | e (5/8)",
+       "mean_timing_error_ms": 12,
+       "max_timing_error_ms": 29,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 1
+      },
+      "E": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 212,
+       "grid": "thirty-second notes",
+       "counting": "1 a | + | (1/8) | 1 (1/8) a | + | e",
+       "mean_timing_error_ms": 8,
+       "max_timing_error_ms": 14,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 141,
+       "grid": "eighth notes",
+       "counting": "1 + | 1 + | 1 + | 1 +",
+       "mean_timing_error_ms": 12,
+       "max_timing_error_ms": 29,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 1
+      },
+      "G": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 71,
+       "grid": "sixteenth notes",
+       "counting": "1 e + a | 1 e + a",
+       "mean_timing_error_ms": 12,
+       "max_timing_error_ms": 29,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 1
+      },
+      "H": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 70,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 trip + let | 1 (1/6) + let",
+       "mean_timing_error_ms": 29,
+       "max_timing_error_ms": 64,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 1
+      }
+     }
+    }
+   },
+   {
+    "key": "item_19",
+    "state": {
+     "bar": {
+      "duration_s": 1.923,
+      "notes_played": 17
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 62,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 trip + (5/6) | 1 trip + (5/6)",
+       "mean_timing_error_ms": 26,
+       "max_timing_error_ms": 64,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 2
+      },
+      "B": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 187,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 | (1/6) + | + (5/6) | 1 | 1 + | let",
+       "mean_timing_error_ms": 12,
+       "max_timing_error_ms": 24,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 1
+      },
+      "C": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 94,
+       "grid": "thirty-second notes",
+       "counting": "1 (5/8) a | e (3/8) + | 1 e (7/8)",
+       "mean_timing_error_ms": 16,
+       "max_timing_error_ms": 32,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 1
+      },
+      "D": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 125,
+       "grid": "thirty-second notes",
+       "counting": "1 a | 1 (5/8) (7/8) | 1 a | 1 (7/8)",
+       "mean_timing_error_ms": 14,
+       "max_timing_error_ms": 24,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 1
+      },
+      "E": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 62,
+       "grid": "thirty-second notes",
+       "counting": "1 (3/8) + (7/8) | 1 (3/8) + (7/8)",
+       "mean_timing_error_ms": 19,
+       "max_timing_error_ms": 39,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 2
+      },
+      "F": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 94,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 + let (5/6) | trip + | 1 (1/6) (5/6)",
+       "mean_timing_error_ms": 29,
+       "max_timing_error_ms": 49,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 1
+      },
+      "G": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 125,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (5/6) | 1 let (5/6) | 1 let | 1 (5/6)",
+       "mean_timing_error_ms": 16,
+       "max_timing_error_ms": 31,
+       "beats_with_tuplets": 4,
+       "distinct_played_onsets_merged": 1
+      },
+      "H": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 187,
+       "grid": "thirty-second notes",
+       "counting": "1 | (1/8) + (5/8) | + (7/8) | 1 | 1 + | a",
+       "mean_timing_error_ms": 9,
+       "max_timing_error_ms": 18,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_20",
+    "state": {
+     "bar": {
+      "duration_s": 2.206,
+      "notes_played": 16
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 109,
+       "grid": "thirty-second notes",
+       "counting": "1 (7/8) | (7/8) | - | a",
+       "mean_timing_error_ms": 12,
+       "max_timing_error_ms": 28,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 1
+      },
+      "B": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 163,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 | trip | let a | - | - | let",
+       "mean_timing_error_ms": 9,
+       "max_timing_error_ms": 22,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 82,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 let | trip + | (5/6)",
+       "mean_timing_error_ms": 17,
+       "max_timing_error_ms": 45,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 54,
+       "grid": "thirty-second notes",
+       "counting": "1 + (7/8) | 1 (7/8)",
+       "mean_timing_error_ms": 36,
+       "max_timing_error_ms": 56,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 163,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 | trip | let (5/6) | - | - | let",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 15,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 55,
+       "grid": "eighth notes",
+       "counting": "1 + | 1 | 1",
+       "mean_timing_error_ms": 36,
+       "max_timing_error_ms": 67,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 1
+      },
+      "G": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 81,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 let | trip + | a",
+       "mean_timing_error_ms": 26,
+       "max_timing_error_ms": 51,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 109,
+       "grid": "sixteenth notes",
+       "counting": "1 | 1 a | 1 | a",
+       "mean_timing_error_ms": 34,
+       "max_timing_error_ms": 53,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   }
+  ]
+ },
+ {
+  "setting": "meter_unknown",
+  "bars": [
+   {
+    "key": "item_21",
+    "state": {
+     "bar": {
+      "duration_s": 1.958,
+      "notes_played": 21
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 184,
+       "grid": "thirty-second notes",
+       "counting": "1 (3/8) a | (1/8) + (7/8) | e (5/8) | 1 (3/8) a | 1 (3/8) (7/8) | e (5/8)",
+       "mean_timing_error_ms": 8,
+       "max_timing_error_ms": 20,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 61,
+       "grid": "thirty-second notes",
+       "counting": "1 (1/8) e (3/8) + (5/8) a (7/8) | 1 (1/8) e (3/8) + (5/8) a (7/8)",
+       "mean_timing_error_ms": 9,
+       "max_timing_error_ms": 26,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 123,
+       "grid": "sixteenth notes",
+       "counting": "1 e + a | 1 e + a | 1 e + a | 1 e + a",
+       "mean_timing_error_ms": 8,
+       "max_timing_error_ms": 24,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 184,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 trip a | 1 + | 1 e let | 1 trip a | 1 + a | e +",
+       "mean_timing_error_ms": 14,
+       "max_timing_error_ms": 27,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 61,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (1/6) trip + let (5/6) | 1 (1/6) trip + let (5/6)",
+       "mean_timing_error_ms": 38,
+       "max_timing_error_ms": 81,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 4
+      },
+      "F": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 92,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (1/6) trip + (5/6) | 1 (1/6) trip + let (5/6) | 1 (1/6) + let (5/6)",
+       "mean_timing_error_ms": 24,
+       "max_timing_error_ms": 44,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "G": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 92,
+       "grid": "thirty-second notes",
+       "counting": "1 e (3/8) + a | 1 (1/8) (3/8) + a (7/8) | 1 e (3/8) (5/8) a",
+       "mean_timing_error_ms": 18,
+       "max_timing_error_ms": 37,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 123,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 e + a | 1 e + a | 1 e + let | 1 e + a",
+       "mean_timing_error_ms": 7,
+       "max_timing_error_ms": 16,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_22",
+    "state": {
+     "bar": {
+      "duration_s": 2.35,
+      "notes_played": 19
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 153,
+       "grid": "sixteenths or triplets (per beat)",
+       "counting": "1 trip let | 1 e + a | e + | - | 1 | -",
+       "mean_timing_error_ms": 16,
+       "max_timing_error_ms": 35,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 51,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (1/6) trip + let (5/6) | trip",
+       "mean_timing_error_ms": 43,
+       "max_timing_error_ms": 85,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 3
+      },
+      "C": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 51,
+       "grid": "thirty-second notes",
+       "counting": "1 (1/8) e (3/8) + (5/8) a (7/8) | e",
+       "mean_timing_error_ms": 33,
+       "max_timing_error_ms": 62,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 1
+      },
+      "D": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 102,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 e trip let a | 1 e + let | let | -",
+       "mean_timing_error_ms": 21,
+       "max_timing_error_ms": 43,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 102,
+       "grid": "thirty-second notes",
+       "counting": "1 e (3/8) (5/8) a | 1 e + (5/8) | (5/8) | -",
+       "mean_timing_error_ms": 18,
+       "max_timing_error_ms": 36,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 153,
+       "grid": "eighth-note triplets",
+       "counting": "1 trip let | 1 trip let | 1 trip let | - | 1 | -",
+       "mean_timing_error_ms": 14,
+       "max_timing_error_ms": 25,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "G": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 76,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (1/6) trip + let (5/6) | 1 (1/6) trip | 1",
+       "mean_timing_error_ms": 20,
+       "max_timing_error_ms": 33,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 77,
+       "grid": "thirty-second notes",
+       "counting": "1 (1/8) e + (5/8) a (7/8) | (1/8) e | 1",
+       "mean_timing_error_ms": 23,
+       "max_timing_error_ms": 40,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_23",
+    "state": {
+     "bar": {
+      "duration_s": 1.849,
+      "notes_played": 25
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 65,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (1/6) trip + let (5/6) | 1 + let (5/6) | 1",
+       "mean_timing_error_ms": 37,
+       "max_timing_error_ms": 67,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 5
+      },
+      "B": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 195,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 trip let | 1 trip (5/6) | (1/6) + | 1 | + let (5/6) | 1 trip + (5/6)",
+       "mean_timing_error_ms": 11,
+       "max_timing_error_ms": 23,
+       "beats_with_tuplets": 5,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 97,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 e trip + a | 1 e + | e trip + let a | 1",
+       "mean_timing_error_ms": 27,
+       "max_timing_error_ms": 68,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 2
+      },
+      "D": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 130,
+       "grid": "thirty-second notes",
+       "counting": "1 e + a | 1 e + a | 1 | 1 (1/8) e (3/8) + a (7/8)",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 24,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 97,
+       "grid": "thirty-second notes",
+       "counting": "1 (1/8) (3/8) + a (7/8) | (1/8) e + | e (3/8) + (5/8) a (7/8)",
+       "mean_timing_error_ms": 16,
+       "max_timing_error_ms": 36,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 1
+      },
+      "F": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 129,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 e + a | 1 e + a | 1 | 1 e trip + let a",
+       "mean_timing_error_ms": 14,
+       "max_timing_error_ms": 37,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 1
+      },
+      "G": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 65,
+       "grid": "thirty-second notes",
+       "counting": "1 (1/8) e (3/8) + (5/8) a (7/8) | 1 + (5/8) a (7/8)",
+       "mean_timing_error_ms": 17,
+       "max_timing_error_ms": 41,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 3
+      },
+      "H": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 195,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 trip let | 1 trip a | e + | 1 | + let a | 1 e + a",
+       "mean_timing_error_ms": 11,
+       "max_timing_error_ms": 36,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_24",
+    "state": {
+     "bar": {
+      "duration_s": 1.807,
+      "notes_played": 16
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 99,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (5/6) | + (5/6) | (1/6) +",
+       "mean_timing_error_ms": 19,
+       "max_timing_error_ms": 42,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 67,
+       "grid": "sixteenth notes",
+       "counting": "1 + | 1 e + a",
+       "mean_timing_error_ms": 12,
+       "max_timing_error_ms": 28,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 200,
+       "grid": "sixteenth notes",
+       "counting": "1 | + | - | 1 a | + | e",
+       "mean_timing_error_ms": 8,
+       "max_timing_error_ms": 21,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 100,
+       "grid": "thirty-second notes",
+       "counting": "1 a | + (7/8) | e (5/8)",
+       "mean_timing_error_ms": 11,
+       "max_timing_error_ms": 26,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 133,
+       "grid": "thirty-second notes",
+       "counting": "1 | 1 | 1 + | 1 (3/8)",
+       "mean_timing_error_ms": 11,
+       "max_timing_error_ms": 19,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 133,
+       "grid": "eighth notes",
+       "counting": "1 | 1 | 1 + | 1 +",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 24,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "G": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 199,
+       "grid": "thirty-second notes",
+       "counting": "1 | + | - | (1/8) a | + | (1/8)",
+       "mean_timing_error_ms": 6,
+       "max_timing_error_ms": 10,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 66,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 + | 1 trip + let",
+       "mean_timing_error_ms": 27,
+       "max_timing_error_ms": 72,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_25",
+    "state": {
+     "bar": {
+      "duration_s": 1.854,
+      "notes_played": 33
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 97,
+       "grid": "thirty-second notes",
+       "counting": "1 (3/8) a | (1/8) (3/8) + (7/8) | (1/8) e (3/8) (5/8) a",
+       "mean_timing_error_ms": 13,
+       "max_timing_error_ms": 33,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 129,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 + | 1 + a | 1 + a | 1 e + let",
+       "mean_timing_error_ms": 8,
+       "max_timing_error_ms": 25,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 130,
+       "grid": "sixteenth notes",
+       "counting": "1 + | 1 + a | 1 + a | 1 e + a",
+       "mean_timing_error_ms": 9,
+       "max_timing_error_ms": 27,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 98,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 trip (5/6) | (1/6) trip + | 1 (1/6) trip + let (5/6)",
+       "mean_timing_error_ms": 17,
+       "max_timing_error_ms": 33,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 65,
+       "grid": "thirty-second notes",
+       "counting": "1 e + a (7/8) | 1 e (3/8) + (5/8) a (7/8)",
+       "mean_timing_error_ms": 11,
+       "max_timing_error_ms": 29,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 65,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 e + a | 1 e trip + let a",
+       "mean_timing_error_ms": 32,
+       "max_timing_error_ms": 109,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 2
+      },
+      "G": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 194,
+       "grid": "thirty-second notes",
+       "counting": "1 a | + | e (5/8) | 1 (7/8) | e + (7/8) | e +",
+       "mean_timing_error_ms": 7,
+       "max_timing_error_ms": 18,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 194,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 a | + | e let | 1 a | e + a | e +",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 27,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_26",
+    "state": {
+     "bar": {
+      "duration_s": 1.159,
+      "notes_played": 13
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 207,
+       "grid": "sixteenths or triplets (per beat)",
+       "counting": "1 trip let | 1 trip | 1 a | trip",
+       "mean_timing_error_ms": 8,
+       "max_timing_error_ms": 26,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 155,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 e + let | 1 + | 1 +",
+       "mean_timing_error_ms": 7,
+       "max_timing_error_ms": 13,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 310,
+       "grid": "eighths or triplets (per beat)",
+       "counting": "1 + | 1 trip | 1 | 1 | 1 | 1",
+       "mean_timing_error_ms": 6,
+       "max_timing_error_ms": 11,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 103,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 e trip + let | 1 trip let",
+       "mean_timing_error_ms": 17,
+       "max_timing_error_ms": 47,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 310,
+       "grid": "sixteenth notes",
+       "counting": "1 + | 1 e | 1 | 1 | 1 | 1",
+       "mean_timing_error_ms": 8,
+       "max_timing_error_ms": 13,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 103,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (1/6) trip + let | 1 trip let",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 29,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "G": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 207,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 trip a | 1 trip | 1 a | trip",
+       "mean_timing_error_ms": 7,
+       "max_timing_error_ms": 23,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 155,
+       "grid": "thirty-second notes",
+       "counting": "1 e + (5/8) | 1 + | 1 +",
+       "mean_timing_error_ms": 9,
+       "max_timing_error_ms": 14,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_27",
+    "state": {
+     "bar": {
+      "duration_s": 1.037,
+      "notes_played": 15
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 232,
+       "grid": "eighth-note triplets",
+       "counting": "1 | - | 1 trip let | 1 trip let",
+       "mean_timing_error_ms": 4,
+       "max_timing_error_ms": 8,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 173,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 | + let | 1 (1/6) + let",
+       "mean_timing_error_ms": 11,
+       "max_timing_error_ms": 15,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 347,
+       "grid": "eighth-note triplets",
+       "counting": "1 | - | - | 1 trip | 1 trip | 1 trip",
+       "mean_timing_error_ms": 11,
+       "max_timing_error_ms": 14,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 348,
+       "grid": "eighth notes",
+       "counting": "1 | - | - | 1 + | 1 + | 1 +",
+       "mean_timing_error_ms": 4,
+       "max_timing_error_ms": 7,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 116,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 | 1 e trip + let a",
+       "mean_timing_error_ms": 15,
+       "max_timing_error_ms": 46,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 116,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 | 1 (1/6) trip + let (5/6)",
+       "mean_timing_error_ms": 4,
+       "max_timing_error_ms": 8,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "G": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 174,
+       "grid": "sixteenth notes",
+       "counting": "1 | + a | 1 e + a",
+       "mean_timing_error_ms": 4,
+       "max_timing_error_ms": 8,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 231,
+       "grid": "thirty-second notes",
+       "counting": "1 | - | 1 e (5/8) | 1 e (5/8)",
+       "mean_timing_error_ms": 6,
+       "max_timing_error_ms": 12,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_28",
+    "state": {
+     "bar": {
+      "duration_s": 1.388,
+      "notes_played": 8
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 86,
+       "grid": "thirty-second notes",
+       "counting": "1 (5/8) (7/8) | e",
+       "mean_timing_error_ms": 11,
+       "max_timing_error_ms": 22,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 130,
+       "grid": "eighth notes",
+       "counting": "1 | 1 + | 1",
+       "mean_timing_error_ms": 16,
+       "max_timing_error_ms": 31,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 173,
+       "grid": "sixteenth notes",
+       "counting": "1 | e a | + | -",
+       "mean_timing_error_ms": 8,
+       "max_timing_error_ms": 18,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 260,
+       "grid": "quarter notes only",
+       "counting": "1 | - | 1 | 1 | 1 | -",
+       "mean_timing_error_ms": 12,
+       "max_timing_error_ms": 26,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 259,
+       "grid": "sixteenth notes",
+       "counting": "1 | - | 1 a | a | - | -",
+       "mean_timing_error_ms": 6,
+       "max_timing_error_ms": 10,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 130,
+       "grid": "thirty-second notes",
+       "counting": "1 | 1 (3/8) (7/8) | -",
+       "mean_timing_error_ms": 7,
+       "max_timing_error_ms": 13,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "G": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 86,
+       "grid": "sixteenths or triplets (per beat)",
+       "counting": "1 let | 1 e",
+       "mean_timing_error_ms": 19,
+       "max_timing_error_ms": 45,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 173,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 | trip (5/6) | + | -",
+       "mean_timing_error_ms": 6,
+       "max_timing_error_ms": 12,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_29",
+    "state": {
+     "bar": {
+      "duration_s": 2.038,
+      "notes_played": 24
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 89,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 e trip + let a | 1 e + let a | 1 e trip + let",
+       "mean_timing_error_ms": 28,
+       "max_timing_error_ms": 74,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 118,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 trip + let | 1 (1/6) trip let (5/6) | (1/6) trip + (5/6) | (1/6) trip +",
+       "mean_timing_error_ms": 18,
+       "max_timing_error_ms": 37,
+       "beats_with_tuplets": 4,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 177,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 trip a | 1 trip let | 1 trip a | e + a | e let | 1 e",
+       "mean_timing_error_ms": 9,
+       "max_timing_error_ms": 23,
+       "beats_with_tuplets": 4,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 59,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (1/6) trip + let (5/6) | 1 (1/6) trip + let (5/6)",
+       "mean_timing_error_ms": 44,
+       "max_timing_error_ms": 77,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 4
+      },
+      "E": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 118,
+       "grid": "thirty-second notes",
+       "counting": "1 e + (5/8) (7/8) | (1/8) (3/8) (5/8) (7/8) | (1/8) (3/8) + (7/8) | (1/8) (3/8) +",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 17,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 88,
+       "grid": "thirty-second notes",
+       "counting": "1 e (3/8) + a (7/8) | 1 e (3/8) (5/8) a (7/8) | (1/8) (3/8) + (5/8)",
+       "mean_timing_error_ms": 18,
+       "max_timing_error_ms": 38,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "G": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 176,
+       "grid": "thirty-second notes",
+       "counting": "1 (3/8) a | 1 (3/8) a | (1/8) (3/8) (7/8) | e + a | e (5/8) | 1 e",
+       "mean_timing_error_ms": 6,
+       "max_timing_error_ms": 19,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 58,
+       "grid": "thirty-second notes",
+       "counting": "1 (1/8) e (3/8) + (5/8) a (7/8) | 1 (1/8) e (3/8) + (5/8) a",
+       "mean_timing_error_ms": 36,
+       "max_timing_error_ms": 56,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 1
+      }
+     }
+    }
+   },
+   {
+    "key": "item_30",
+    "state": {
+     "bar": {
+      "duration_s": 1.686,
+      "notes_played": 27
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 213,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 trip a | e + a | e + | 1 trip a | 1 + a | e let",
+       "mean_timing_error_ms": 11,
+       "max_timing_error_ms": 29,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 71,
+       "grid": "thirty-second notes",
+       "counting": "1 (1/8) e (3/8) + (5/8) a (7/8) | 1 (1/8) e (3/8) + (5/8) a (7/8)",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 42,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 142,
+       "grid": "sixteenth notes",
+       "counting": "1 e + a | 1 e + a | 1 e + a | 1 e + a",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 40,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 108,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (1/6) trip + let (5/6) | (1/6) trip + let | 1 (1/6) trip + let (5/6)",
+       "mean_timing_error_ms": 20,
+       "max_timing_error_ms": 36,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 107,
+       "grid": "thirty-second notes",
+       "counting": "1 e (3/8) (5/8) a (7/8) | (1/8) e + a (7/8) | (1/8) e (3/8) (5/8) (7/8)",
+       "mean_timing_error_ms": 16,
+       "max_timing_error_ms": 31,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 142,
+       "grid": "thirty-second notes",
+       "counting": "1 e + a | 1 (1/8) + a | 1 e + a | 1 e + a",
+       "mean_timing_error_ms": 7,
+       "max_timing_error_ms": 19,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "G": {
+       "quarter_beats_in_bar": 6,
+       "tempo_bpm": 214,
+       "grid": "thirty-second notes",
+       "counting": "1 (3/8) a | (1/8) + a | e (5/8) | 1 (3/8) (7/8) | (1/8) + (7/8) | e (5/8)",
+       "mean_timing_error_ms": 7,
+       "max_timing_error_ms": 12,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "H": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 72,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 e trip + a | 1 e trip + let a | 1",
+       "mean_timing_error_ms": 40,
+       "max_timing_error_ms": 102,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 4
+      }
+     }
+    }
+   }
+  ]
+ },
+ {
+  "setting": "meter_known",
+  "bars": [
+   {
+    "key": "item_31",
+    "state": {
+     "bar": {
+      "duration_s": 0.78,
+      "notes_played": 10,
+      "time_signature": "2/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 154,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 + | 1 + let",
+       "mean_timing_error_ms": 9,
+       "max_timing_error_ms": 21,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 154,
+       "grid": "eighth-note triplets",
+       "counting": "1 let | 1 let",
+       "mean_timing_error_ms": 28,
+       "max_timing_error_ms": 44,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 1
+      },
+      "C": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 155,
+       "grid": "sixteenth notes",
+       "counting": "1 + | 1 + a",
+       "mean_timing_error_ms": 17,
+       "max_timing_error_ms": 40,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 153,
+       "grid": "eighth notes",
+       "counting": "1 + | 1 +",
+       "mean_timing_error_ms": 14,
+       "max_timing_error_ms": 39,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 1
+      },
+      "E": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 154,
+       "grid": "thirty-second notes",
+       "counting": "1 + | (1/8) + (5/8)",
+       "mean_timing_error_ms": 9,
+       "max_timing_error_ms": 22,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 160,
+       "grid": "quarter notes only",
+       "counting": "1 | 1 | 1",
+       "mean_timing_error_ms": 95,
+       "max_timing_error_ms": 166,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 2
+      }
+     }
+    }
+   },
+   {
+    "key": "item_32",
+    "state": {
+     "bar": {
+      "duration_s": 0.829,
+      "notes_played": 6,
+      "time_signature": "2/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 144,
+       "grid": "eighth notes",
+       "counting": "1 | 1 +",
+       "mean_timing_error_ms": 39,
+       "max_timing_error_ms": 81,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 2
+      },
+      "B": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 145,
+       "grid": "eighth-note triplets",
+       "counting": "1 | 1 trip let",
+       "mean_timing_error_ms": 21,
+       "max_timing_error_ms": 52,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 1
+      },
+      "C": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 145,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 | 1 e + let",
+       "mean_timing_error_ms": 11,
+       "max_timing_error_ms": 19,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 145,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 | 1 (1/6) + let",
+       "mean_timing_error_ms": 11,
+       "max_timing_error_ms": 24,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 145,
+       "grid": "sixteenth notes",
+       "counting": "1 | 1 e + a",
+       "mean_timing_error_ms": 9,
+       "max_timing_error_ms": 13,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 147,
+       "grid": "quarter notes only",
+       "counting": "1 | 1 | 1",
+       "mean_timing_error_ms": 81,
+       "max_timing_error_ms": 177,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 2
+      }
+     }
+    }
+   },
+   {
+    "key": "item_33",
+    "state": {
+     "bar": {
+      "duration_s": 0.825,
+      "notes_played": 16,
+      "time_signature": "2/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 146,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 let | (1/6) +",
+       "mean_timing_error_ms": 24,
+       "max_timing_error_ms": 33,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 1
+      },
+      "B": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 146,
+       "grid": "thirty-second notes",
+       "counting": "1 (1/8) (5/8) | (1/8) (5/8)",
+       "mean_timing_error_ms": 9,
+       "max_timing_error_ms": 13,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 146,
+       "grid": "eighth-note triplets",
+       "counting": "1 let | 1 let",
+       "mean_timing_error_ms": 24,
+       "max_timing_error_ms": 34,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 1
+      },
+      "D": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 149,
+       "grid": "quarter notes only",
+       "counting": "1 | 1 | 1",
+       "mean_timing_error_ms": 77,
+       "max_timing_error_ms": 151,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 2
+      },
+      "E": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 146,
+       "grid": "eighths or triplets (per beat)",
+       "counting": "1 let | 1 +",
+       "mean_timing_error_ms": 21,
+       "max_timing_error_ms": 30,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 1
+      },
+      "F": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 146,
+       "grid": "eighth notes",
+       "counting": "1 + | 1 +",
+       "mean_timing_error_ms": 16,
+       "max_timing_error_ms": 27,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 1
+      }
+     }
+    }
+   },
+   {
+    "key": "item_34",
+    "state": {
+     "bar": {
+      "duration_s": 0.824,
+      "notes_played": 12,
+      "time_signature": "2/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 145,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 + | 1 (1/6) + let",
+       "mean_timing_error_ms": 7,
+       "max_timing_error_ms": 18,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 146,
+       "grid": "eighths or triplets (per beat)",
+       "counting": "1 + | 1 trip let",
+       "mean_timing_error_ms": 23,
+       "max_timing_error_ms": 49,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 1
+      },
+      "C": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 146,
+       "grid": "sixteenth notes",
+       "counting": "1 + | 1 e + a",
+       "mean_timing_error_ms": 6,
+       "max_timing_error_ms": 13,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 145,
+       "grid": "eighth notes",
+       "counting": "1 + | 1 +",
+       "mean_timing_error_ms": 34,
+       "max_timing_error_ms": 69,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 2
+      },
+      "E": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 146,
+       "grid": "eighth-note triplets",
+       "counting": "1 let | 1 trip let",
+       "mean_timing_error_ms": 33,
+       "max_timing_error_ms": 50,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 1
+      },
+      "F": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 151,
+       "grid": "quarter notes only",
+       "counting": "1 | 1 | 1",
+       "mean_timing_error_ms": 97,
+       "max_timing_error_ms": 188,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 3
+      }
+     }
+    }
+   },
+   {
+    "key": "item_35",
+    "state": {
+     "bar": {
+      "duration_s": 0.88,
+      "notes_played": 7,
+      "time_signature": "2/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 137,
+       "grid": "eighth-note triplets",
+       "counting": "1 | 1 let",
+       "mean_timing_error_ms": 28,
+       "max_timing_error_ms": 60,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 140,
+       "grid": "quarter notes only",
+       "counting": "1 | 1 | 1",
+       "mean_timing_error_ms": 74,
+       "max_timing_error_ms": 190,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 136,
+       "grid": "eighth notes",
+       "counting": "1 | 1 +",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 20,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_36",
+    "state": {
+     "bar": {
+      "duration_s": 0.807,
+      "notes_played": 14,
+      "time_signature": "2/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 149,
+       "grid": "thirty-second notes",
+       "counting": "1 e + a | 1 e + (5/8)",
+       "mean_timing_error_ms": 8,
+       "max_timing_error_ms": 25,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 150,
+       "grid": "eighth notes",
+       "counting": "1 + | 1 +",
+       "mean_timing_error_ms": 48,
+       "max_timing_error_ms": 65,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 4
+      },
+      "C": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 149,
+       "grid": "eighth-note triplets",
+       "counting": "1 trip let | 1 trip let",
+       "mean_timing_error_ms": 29,
+       "max_timing_error_ms": 56,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 2
+      },
+      "D": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 148,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 trip + let | 1 (1/6) + let",
+       "mean_timing_error_ms": 14,
+       "max_timing_error_ms": 32,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 149,
+       "grid": "sixteenth notes",
+       "counting": "1 e + a | 1 e + a",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 18,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 149,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 e + a | 1 e + let",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 10,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_37",
+    "state": {
+     "bar": {
+      "duration_s": 0.897,
+      "notes_played": 7,
+      "time_signature": "2/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 134,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 + | (1/6) trip + (5/6)",
+       "mean_timing_error_ms": 16,
+       "max_timing_error_ms": 23,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 134,
+       "grid": "sixteenth notes",
+       "counting": "1 + | e + a",
+       "mean_timing_error_ms": 30,
+       "max_timing_error_ms": 46,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 1
+      },
+      "C": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 135,
+       "grid": "eighth notes",
+       "counting": "1 + | 1 + | 1",
+       "mean_timing_error_ms": 40,
+       "max_timing_error_ms": 73,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 1
+      },
+      "D": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 133,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 + | e trip + a",
+       "mean_timing_error_ms": 22,
+       "max_timing_error_ms": 54,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 133,
+       "grid": "thirty-second notes",
+       "counting": "1 + | (1/8) (3/8) + a",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 18,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 134,
+       "grid": "eighths or triplets (per beat)",
+       "counting": "1 + | 1 trip let",
+       "mean_timing_error_ms": 30,
+       "max_timing_error_ms": 61,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 1
+      }
+     }
+    }
+   },
+   {
+    "key": "item_38",
+    "state": {
+     "bar": {
+      "duration_s": 0.811,
+      "notes_played": 15,
+      "time_signature": "2/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 147,
+       "grid": "eighth-note triplets",
+       "counting": "1 trip let | 1 trip let",
+       "mean_timing_error_ms": 31,
+       "max_timing_error_ms": 65,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 2
+      },
+      "B": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 148,
+       "grid": "thirty-second notes",
+       "counting": "1 e + a | 1 (3/8) + a",
+       "mean_timing_error_ms": 8,
+       "max_timing_error_ms": 24,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 148,
+       "grid": "sixteenth notes",
+       "counting": "1 e + a | 1 e + a",
+       "mean_timing_error_ms": 6,
+       "max_timing_error_ms": 20,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 150,
+       "grid": "eighth notes",
+       "counting": "1 + | 1 + | 1",
+       "mean_timing_error_ms": 45,
+       "max_timing_error_ms": 70,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 3
+      },
+      "E": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 148,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 e + a | 1 trip + a",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 10,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 148,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 trip + (5/6) | 1 trip + (5/6)",
+       "mean_timing_error_ms": 13,
+       "max_timing_error_ms": 25,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_39",
+    "state": {
+     "bar": {
+      "duration_s": 0.787,
+      "notes_played": 11,
+      "time_signature": "2/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 152,
+       "grid": "thirty-second notes",
+       "counting": "(1/8) (3/8) (5/8) (7/8) | (7/8) (1/8) (3/8) + a",
+       "mean_timing_error_ms": 12,
+       "max_timing_error_ms": 20,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 154,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 trip + a | a 1 trip + a",
+       "mean_timing_error_ms": 11,
+       "max_timing_error_ms": 31,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 153,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "(1/6) trip let (5/6) | (5/6) (1/6) trip + (5/6)",
+       "mean_timing_error_ms": 21,
+       "max_timing_error_ms": 29,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 154,
+       "grid": "sixteenth notes",
+       "counting": "1 e + a | a 1 e + a",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 30,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 152,
+       "grid": "eighth-note triplets",
+       "counting": "1 trip let | 1 trip let",
+       "mean_timing_error_ms": 37,
+       "max_timing_error_ms": 60,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 3
+      },
+      "F": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 152,
+       "grid": "sixteenths or triplets (per beat)",
+       "counting": "1 trip let | 1 + a",
+       "mean_timing_error_ms": 33,
+       "max_timing_error_ms": 56,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 3
+      }
+     }
+    }
+   },
+   {
+    "key": "item_40",
+    "state": {
+     "bar": {
+      "duration_s": 0.925,
+      "notes_played": 11,
+      "time_signature": "2/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 2,
+       "tempo_bpm": 130,
+       "grid": "quarter notes only",
+       "counting": "1 | 1",
+       "mean_timing_error_ms": 13,
+       "max_timing_error_ms": 25,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   }
+  ]
+ },
+ {
+  "setting": "meter_known",
+  "bars": [
+   {
+    "key": "item_41",
+    "state": {
+     "bar": {
+      "duration_s": 1.191,
+      "notes_played": 3,
+      "time_signature": "3/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 151,
+       "grid": "eighth notes",
+       "counting": "1 | 1 | +",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 14,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 152,
+       "grid": "eighth-note triplets",
+       "counting": "1 | 1 | let",
+       "mean_timing_error_ms": 21,
+       "max_timing_error_ms": 46,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 154,
+       "grid": "quarter notes only",
+       "counting": "1 | 1 | - | 1",
+       "mean_timing_error_ms": 62,
+       "max_timing_error_ms": 165,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_42",
+    "state": {
+     "bar": {
+      "duration_s": 1.167,
+      "notes_played": 12,
+      "time_signature": "3/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 153,
+       "grid": "eighth notes",
+       "counting": "1 | 1 | 1 +",
+       "mean_timing_error_ms": 24,
+       "max_timing_error_ms": 65,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 154,
+       "grid": "eighth-note triplets",
+       "counting": "1 | 1 | 1 let",
+       "mean_timing_error_ms": 7,
+       "max_timing_error_ms": 17,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 154,
+       "grid": "sixteenth notes",
+       "counting": "1 | 1 | 1 a",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 7,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 156,
+       "grid": "quarter notes only",
+       "counting": "1 | 1 | 1 | 1",
+       "mean_timing_error_ms": 25,
+       "max_timing_error_ms": 75,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_43",
+    "state": {
+     "bar": {
+      "duration_s": 1.23,
+      "notes_played": 8,
+      "time_signature": "3/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 146,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (1/6) | - | 1",
+       "mean_timing_error_ms": 14,
+       "max_timing_error_ms": 21,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 147,
+       "grid": "quarter notes only",
+       "counting": "1 | - | 1",
+       "mean_timing_error_ms": 18,
+       "max_timing_error_ms": 42,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 1
+      },
+      "C": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 146,
+       "grid": "thirty-second notes",
+       "counting": "1 (1/8) | - | 1",
+       "mean_timing_error_ms": 8,
+       "max_timing_error_ms": 14,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_44",
+    "state": {
+     "bar": {
+      "duration_s": 1.214,
+      "notes_played": 14,
+      "time_signature": "3/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 148,
+       "grid": "sixteenths or triplets (per beat)",
+       "counting": "1 + a | 1 e + a | 1 trip let",
+       "mean_timing_error_ms": 16,
+       "max_timing_error_ms": 46,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 1
+      },
+      "B": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 149,
+       "grid": "thirty-second notes",
+       "counting": "1 + (5/8) | 1 (3/8) + (5/8) | 1 (3/8) + a",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 25,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 149,
+       "grid": "eighth notes",
+       "counting": "1 + | 1 + | 1 +",
+       "mean_timing_error_ms": 35,
+       "max_timing_error_ms": 77,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 5
+      },
+      "D": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 148,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 + let | 1 trip + let | 1 trip + let",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 15,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 148,
+       "grid": "eighth-note triplets",
+       "counting": "1 let | 1 trip let | 1 trip let",
+       "mean_timing_error_ms": 19,
+       "max_timing_error_ms": 61,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 3
+      },
+      "F": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 149,
+       "grid": "sixteenth notes",
+       "counting": "1 + a | 1 e + a | 1 e + a",
+       "mean_timing_error_ms": 17,
+       "max_timing_error_ms": 37,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_45",
+    "state": {
+     "bar": {
+      "duration_s": 1.104,
+      "notes_played": 8,
+      "time_signature": "3/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 162,
+       "grid": "eighth-note triplets",
+       "counting": "1 let | 1 let | 1 trip",
+       "mean_timing_error_ms": 31,
+       "max_timing_error_ms": 53,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 163,
+       "grid": "eighth notes",
+       "counting": "1 + | 1 + | 1 +",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 10,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 162,
+       "grid": "quarter notes only",
+       "counting": "1 | 1 | 1",
+       "mean_timing_error_ms": 94,
+       "max_timing_error_ms": 179,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 3
+      }
+     }
+    }
+   },
+   {
+    "key": "item_46",
+    "state": {
+     "bar": {
+      "duration_s": 1.087,
+      "notes_played": 15,
+      "time_signature": "3/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 165,
+       "grid": "sixteenth notes",
+       "counting": "1 e + a | 1 e + a | 1 e + a",
+       "mean_timing_error_ms": 5,
+       "max_timing_error_ms": 10,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 170,
+       "grid": "eighth notes",
+       "counting": "1 + | 1 + | 1 + | 1",
+       "mean_timing_error_ms": 43,
+       "max_timing_error_ms": 72,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 5
+      },
+      "C": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 167,
+       "grid": "eighth-note triplets",
+       "counting": "1 trip let | 1 trip let | 1 trip let",
+       "mean_timing_error_ms": 29,
+       "max_timing_error_ms": 55,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 3
+      },
+      "D": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 166,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (1/6) + let | 1 (1/6) + (5/6) | 1 trip + let",
+       "mean_timing_error_ms": 16,
+       "max_timing_error_ms": 26,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 173,
+       "grid": "quarter notes only",
+       "counting": "1 | 1 | 1 | 1",
+       "mean_timing_error_ms": 75,
+       "max_timing_error_ms": 137,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 8
+      }
+     }
+    }
+   },
+   {
+    "key": "item_47",
+    "state": {
+     "bar": {
+      "duration_s": 1.514,
+      "notes_played": 3,
+      "time_signature": "3/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 119,
+       "grid": "quarter notes only",
+       "counting": "1 | - | -",
+       "mean_timing_error_ms": 2,
+       "max_timing_error_ms": 2,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_48",
+    "state": {
+     "bar": {
+      "duration_s": 1.699,
+      "notes_played": 32,
+      "time_signature": "4/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 141,
+       "grid": "eighth notes",
+       "counting": "1 + | 1 + | 1 + | 1 +",
+       "mean_timing_error_ms": 12,
+       "max_timing_error_ms": 29,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 1
+      },
+      "B": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 141,
+       "grid": "eighth-note triplets",
+       "counting": "1 let | 1 trip | 1 trip | 1 trip",
+       "mean_timing_error_ms": 28,
+       "max_timing_error_ms": 57,
+       "beats_with_tuplets": 4,
+       "distinct_played_onsets_merged": 1
+      },
+      "C": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 140,
+       "grid": "quarter notes only",
+       "counting": "1 | 1 | 1 | 1",
+       "mean_timing_error_ms": 95,
+       "max_timing_error_ms": 220,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 5
+      },
+      "D": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 141,
+       "grid": "thirty-second notes",
+       "counting": "1 + | 1 + | 1 (1/8) + | 1 +",
+       "mean_timing_error_ms": 9,
+       "max_timing_error_ms": 17,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_49",
+    "state": {
+     "bar": {
+      "duration_s": 1.923,
+      "notes_played": 17,
+      "time_signature": "4/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 125,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (5/6) | 1 let (5/6) | 1 let | 1 (5/6)",
+       "mean_timing_error_ms": 16,
+       "max_timing_error_ms": 31,
+       "beats_with_tuplets": 4,
+       "distinct_played_onsets_merged": 1
+      },
+      "B": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 125,
+       "grid": "sixteenth notes",
+       "counting": "1 a | 1 a | 1 a | 1 a",
+       "mean_timing_error_ms": 16,
+       "max_timing_error_ms": 35,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 2
+      },
+      "C": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 125,
+       "grid": "thirty-second notes",
+       "counting": "1 a | 1 (5/8) (7/8) | 1 a | 1 (7/8)",
+       "mean_timing_error_ms": 14,
+       "max_timing_error_ms": 24,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 1
+      },
+      "D": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 125,
+       "grid": "eighth-note triplets",
+       "counting": "1 let | 1 let | 1 let | 1 let",
+       "mean_timing_error_ms": 25,
+       "max_timing_error_ms": 60,
+       "beats_with_tuplets": 4,
+       "distinct_played_onsets_merged": 2
+      },
+      "E": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 125,
+       "grid": "sixteenths or triplets (per beat)",
+       "counting": "1 a | 1 let | 1 let | 1 a",
+       "mean_timing_error_ms": 17,
+       "max_timing_error_ms": 42,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 2
+      },
+      "F": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 125,
+       "grid": "eighth notes",
+       "counting": "1 | 1 + | 1 + | 1 | 1",
+       "mean_timing_error_ms": 48,
+       "max_timing_error_ms": 106,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 3
+      }
+     }
+    }
+   },
+   {
+    "key": "item_50",
+    "state": {
+     "bar": {
+      "duration_s": 2.206,
+      "notes_played": 16,
+      "time_signature": "4/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 108,
+       "grid": "eighth-note triplets",
+       "counting": "1 | 1 let | 1 | let",
+       "mean_timing_error_ms": 50,
+       "max_timing_error_ms": 87,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 109,
+       "grid": "thirty-second notes",
+       "counting": "1 (7/8) | (7/8) | - | a",
+       "mean_timing_error_ms": 12,
+       "max_timing_error_ms": 28,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 1
+      },
+      "C": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 109,
+       "grid": "sixteenth notes",
+       "counting": "1 | 1 a | 1 | a",
+       "mean_timing_error_ms": 34,
+       "max_timing_error_ms": 53,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 109,
+       "grid": "quarter notes only",
+       "counting": "1 | 1 | 1 | - | 1",
+       "mean_timing_error_ms": 33,
+       "max_timing_error_ms": 72,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 1
+      },
+      "E": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 109,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (5/6) | (5/6) | - | (5/6)",
+       "mean_timing_error_ms": 18,
+       "max_timing_error_ms": 30,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 1
+      }
+     }
+    }
+   }
+  ]
+ },
+ {
+  "setting": "meter_known",
+  "bars": [
+   {
+    "key": "item_51",
+    "state": {
+     "bar": {
+      "duration_s": 1.958,
+      "notes_played": 21,
+      "time_signature": "4/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 122,
+       "grid": "eighth-note triplets",
+       "counting": "1 trip let | 1 trip let | 1 trip let | 1 trip let",
+       "mean_timing_error_ms": 38,
+       "max_timing_error_ms": 79,
+       "beats_with_tuplets": 4,
+       "distinct_played_onsets_merged": 4
+      },
+      "B": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 123,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 e + a | 1 e + a | 1 e + let | 1 e + a",
+       "mean_timing_error_ms": 7,
+       "max_timing_error_ms": 16,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 123,
+       "grid": "sixteenth notes",
+       "counting": "1 e + a | 1 e + a | 1 e + a | 1 e + a",
+       "mean_timing_error_ms": 8,
+       "max_timing_error_ms": 24,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 121,
+       "grid": "eighth notes",
+       "counting": "1 + | 1 + | 1 + | 1 +",
+       "mean_timing_error_ms": 61,
+       "max_timing_error_ms": 107,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 8
+      },
+      "E": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 122,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 trip + let | 1 trip + (5/6) | 1 trip + let | 1 (1/6) + let",
+       "mean_timing_error_ms": 18,
+       "max_timing_error_ms": 36,
+       "beats_with_tuplets": 4,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 123,
+       "grid": "quarter notes only",
+       "counting": "1 | 1 | 1 | 1 | 1",
+       "mean_timing_error_ms": 128,
+       "max_timing_error_ms": 245,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 11
+      }
+     }
+    }
+   },
+   {
+    "key": "item_52",
+    "state": {
+     "bar": {
+      "duration_s": 2.35,
+      "notes_played": 19,
+      "time_signature": "4/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 102,
+       "grid": "thirty-second notes",
+       "counting": "1 e (3/8) (5/8) a | 1 e + (5/8) | (5/8) | -",
+       "mean_timing_error_ms": 18,
+       "max_timing_error_ms": 36,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 102,
+       "grid": "sixteenths or triplets (per beat)",
+       "counting": "1 e + a | 1 e + a | let | -",
+       "mean_timing_error_ms": 28,
+       "max_timing_error_ms": 63,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 1
+      },
+      "C": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 102,
+       "grid": "sixteenth notes",
+       "counting": "1 e + a | 1 e + a | + | -",
+       "mean_timing_error_ms": 32,
+       "max_timing_error_ms": 62,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 1
+      },
+      "D": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 102,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (1/6) trip let (5/6) | 1 (1/6) + let | let | -",
+       "mean_timing_error_ms": 22,
+       "max_timing_error_ms": 40,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 102,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 e trip let a | 1 e + let | let | -",
+       "mean_timing_error_ms": 21,
+       "max_timing_error_ms": 43,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 102,
+       "grid": "eighth-note triplets",
+       "counting": "1 trip let | 1 trip let | let | -",
+       "mean_timing_error_ms": 42,
+       "max_timing_error_ms": 83,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 3
+      }
+     }
+    }
+   },
+   {
+    "key": "item_53",
+    "state": {
+     "bar": {
+      "duration_s": 1.849,
+      "notes_played": 25,
+      "time_signature": "4/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 131,
+       "grid": "eighth notes",
+       "counting": "1 + | 1 + | 1 | 1 + | 1",
+       "mean_timing_error_ms": 53,
+       "max_timing_error_ms": 94,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 8
+      },
+      "B": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 131,
+       "grid": "eighth-note triplets",
+       "counting": "1 trip let | 1 trip let | 1 | 1 trip let | 1",
+       "mean_timing_error_ms": 36,
+       "max_timing_error_ms": 66,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 5
+      },
+      "C": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 129,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 e + a | 1 e + a | 1 | 1 e trip + let a",
+       "mean_timing_error_ms": 14,
+       "max_timing_error_ms": 37,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 1
+      },
+      "D": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 130,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (1/6) + let | 1 (1/6) + let | 1 | 1 (1/6) trip + let (5/6)",
+       "mean_timing_error_ms": 16,
+       "max_timing_error_ms": 36,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 1
+      },
+      "E": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 130,
+       "grid": "thirty-second notes",
+       "counting": "1 e + a | 1 e + a | 1 | 1 (1/8) e (3/8) + a (7/8)",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 24,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 129,
+       "grid": "sixteenth notes",
+       "counting": "1 e + a | 1 e + a | 1 | 1 e + a",
+       "mean_timing_error_ms": 15,
+       "max_timing_error_ms": 37,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 3
+      }
+     }
+    }
+   },
+   {
+    "key": "item_54",
+    "state": {
+     "bar": {
+      "duration_s": 1.807,
+      "notes_played": 16,
+      "time_signature": "4/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 133,
+       "grid": "eighth-note triplets",
+       "counting": "1 | 1 | 1 let | 1 trip",
+       "mean_timing_error_ms": 27,
+       "max_timing_error_ms": 69,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 133,
+       "grid": "thirty-second notes",
+       "counting": "1 | 1 | 1 + | 1 (3/8)",
+       "mean_timing_error_ms": 11,
+       "max_timing_error_ms": 19,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 133,
+       "grid": "quarter notes only",
+       "counting": "1 | 1 | 1 | 1",
+       "mean_timing_error_ms": 76,
+       "max_timing_error_ms": 220,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 2
+      },
+      "D": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 133,
+       "grid": "eighth notes",
+       "counting": "1 | 1 | 1 + | 1 +",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 24,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_55",
+    "state": {
+     "bar": {
+      "duration_s": 1.854,
+      "notes_played": 33,
+      "time_signature": "4/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 130,
+       "grid": "eighth-note triplets",
+       "counting": "1 let | 1 let | 1 let | 1 trip let",
+       "mean_timing_error_ms": 40,
+       "max_timing_error_ms": 66,
+       "beats_with_tuplets": 4,
+       "distinct_played_onsets_merged": 3
+      },
+      "B": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 130,
+       "grid": "eighths or triplets (per beat)",
+       "counting": "1 + | 1 let | 1 let | 1 trip let",
+       "mean_timing_error_ms": 32,
+       "max_timing_error_ms": 65,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 3
+      },
+      "C": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 130,
+       "grid": "thirty-second notes",
+       "counting": "1 + | 1 + a | 1 (5/8) a | 1 e + a",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 24,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 129,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 + | 1 + a | 1 + a | 1 e + let",
+       "mean_timing_error_ms": 8,
+       "max_timing_error_ms": 25,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 130,
+       "grid": "sixteenth notes",
+       "counting": "1 + | 1 + a | 1 + a | 1 e + a",
+       "mean_timing_error_ms": 9,
+       "max_timing_error_ms": 27,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 129,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 + | 1 + (5/6) | 1 + (5/6) | 1 (1/6) + let",
+       "mean_timing_error_ms": 13,
+       "max_timing_error_ms": 33,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_56",
+    "state": {
+     "bar": {
+      "duration_s": 1.159,
+      "notes_played": 13,
+      "time_signature": "3/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 155,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 (1/6) + let | 1 + | 1 +",
+       "mean_timing_error_ms": 9,
+       "max_timing_error_ms": 18,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 154,
+       "grid": "eighth-note triplets",
+       "counting": "1 trip let | 1 trip | 1 trip",
+       "mean_timing_error_ms": 25,
+       "max_timing_error_ms": 50,
+       "beats_with_tuplets": 3,
+       "distinct_played_onsets_merged": 1
+      },
+      "C": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 155,
+       "grid": "sixteenth notes",
+       "counting": "1 e + a | 1 + | 1 +",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 28,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 155,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 e + let | 1 + | 1 +",
+       "mean_timing_error_ms": 7,
+       "max_timing_error_ms": 13,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 154,
+       "grid": "eighths or triplets (per beat)",
+       "counting": "1 trip let | 1 + | 1 +",
+       "mean_timing_error_ms": 16,
+       "max_timing_error_ms": 41,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 1
+      },
+      "F": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 155,
+       "grid": "thirty-second notes",
+       "counting": "1 e + (5/8) | 1 + | 1 +",
+       "mean_timing_error_ms": 9,
+       "max_timing_error_ms": 14,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_57",
+    "state": {
+     "bar": {
+      "duration_s": 1.037,
+      "notes_played": 15,
+      "time_signature": "3/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 173,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 | + let | 1 (1/6) + let",
+       "mean_timing_error_ms": 11,
+       "max_timing_error_ms": 15,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 173,
+       "grid": "eighth notes",
+       "counting": "1 | + | 1 +",
+       "mean_timing_error_ms": 37,
+       "max_timing_error_ms": 51,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 3
+      },
+      "C": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 174,
+       "grid": "sixteenth notes",
+       "counting": "1 | + a | 1 e + a",
+       "mean_timing_error_ms": 4,
+       "max_timing_error_ms": 8,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 175,
+       "grid": "quarter notes only",
+       "counting": "1 | - | 1 | 1",
+       "mean_timing_error_ms": 86,
+       "max_timing_error_ms": 170,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 4
+      },
+      "E": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 173,
+       "grid": "eighth-note triplets",
+       "counting": "1 | let | 1 trip let",
+       "mean_timing_error_ms": 26,
+       "max_timing_error_ms": 51,
+       "beats_with_tuplets": 2,
+       "distinct_played_onsets_merged": 2
+      }
+     }
+    }
+   },
+   {
+    "key": "item_58",
+    "state": {
+     "bar": {
+      "duration_s": 1.388,
+      "notes_played": 8,
+      "time_signature": "3/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 130,
+       "grid": "quarter notes only",
+       "counting": "1 | 1 | 1",
+       "mean_timing_error_ms": 61,
+       "max_timing_error_ms": 172,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 1
+      },
+      "B": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 130,
+       "grid": "thirty-second notes",
+       "counting": "1 | 1 (3/8) (7/8) | -",
+       "mean_timing_error_ms": 7,
+       "max_timing_error_ms": 13,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "C": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 130,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 | 1 trip (5/6) | -",
+       "mean_timing_error_ms": 15,
+       "max_timing_error_ms": 24,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      },
+      "D": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 130,
+       "grid": "eighth notes",
+       "counting": "1 | 1 + | 1",
+       "mean_timing_error_ms": 16,
+       "max_timing_error_ms": 31,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 3,
+       "tempo_bpm": 130,
+       "grid": "eighth-note triplets",
+       "counting": "1 | 1 trip | 1",
+       "mean_timing_error_ms": 18,
+       "max_timing_error_ms": 35,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_59",
+    "state": {
+     "bar": {
+      "duration_s": 2.038,
+      "notes_played": 24,
+      "time_signature": "4/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 118,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 trip + let | 1 (1/6) trip let (5/6) | (1/6) trip + (5/6) | (1/6) trip +",
+       "mean_timing_error_ms": 18,
+       "max_timing_error_ms": 37,
+       "beats_with_tuplets": 4,
+       "distinct_played_onsets_merged": 0
+      },
+      "B": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 117,
+       "grid": "sixteenths or triplets (per beat)",
+       "counting": "1 e + a | 1 trip let | 1 e + a | 1 e +",
+       "mean_timing_error_ms": 31,
+       "max_timing_error_ms": 72,
+       "beats_with_tuplets": 1,
+       "distinct_played_onsets_merged": 2
+      },
+      "C": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 117,
+       "grid": "sixteenth notes",
+       "counting": "1 e + a | 1 e + a | 1 e + a | 1 e +",
+       "mean_timing_error_ms": 32,
+       "max_timing_error_ms": 55,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 1
+      },
+      "D": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 117,
+       "grid": "sixteenths and triplets together (cross-rhythm)",
+       "counting": "1 e + let | 1 e + let | 1 e trip + a | 1 trip +",
+       "mean_timing_error_ms": 24,
+       "max_timing_error_ms": 49,
+       "beats_with_tuplets": 4,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 119,
+       "grid": "eighth-note triplets",
+       "counting": "1 trip let | 1 trip let | 1 trip let | 1 trip let",
+       "mean_timing_error_ms": 44,
+       "max_timing_error_ms": 76,
+       "beats_with_tuplets": 4,
+       "distinct_played_onsets_merged": 4
+      },
+      "F": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 118,
+       "grid": "thirty-second notes",
+       "counting": "1 e + (5/8) (7/8) | (1/8) (3/8) (5/8) (7/8) | (1/8) (3/8) + (7/8) | (1/8) (3/8) +",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 17,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   },
+   {
+    "key": "item_60",
+    "state": {
+     "bar": {
+      "duration_s": 1.686,
+      "notes_played": 27,
+      "time_signature": "4/4"
+     },
+     "candidates": {
+      "A": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 142,
+       "grid": "eighth-note triplets",
+       "counting": "1 trip let | 1 let | 1 trip let | 1 trip let",
+       "mean_timing_error_ms": 36,
+       "max_timing_error_ms": 67,
+       "beats_with_tuplets": 4,
+       "distinct_played_onsets_merged": 5
+      },
+      "B": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 145,
+       "grid": "quarter notes only",
+       "counting": "1 | 1 | 1 | 1 | 1",
+       "mean_timing_error_ms": 94,
+       "max_timing_error_ms": 172,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 11
+      },
+      "C": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 144,
+       "grid": "eighth notes",
+       "counting": "1 + | 1 + | 1 + | 1 + | 1",
+       "mean_timing_error_ms": 51,
+       "max_timing_error_ms": 102,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 7
+      },
+      "D": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 142,
+       "grid": "sixteenth-note sextuplets",
+       "counting": "1 trip + (5/6) | 1 (1/6) + let | 1 trip + (5/6) | 1 (1/6) + (5/6)",
+       "mean_timing_error_ms": 16,
+       "max_timing_error_ms": 31,
+       "beats_with_tuplets": 4,
+       "distinct_played_onsets_merged": 0
+      },
+      "E": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 142,
+       "grid": "sixteenth notes",
+       "counting": "1 e + a | 1 e + a | 1 e + a | 1 e + a",
+       "mean_timing_error_ms": 10,
+       "max_timing_error_ms": 40,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      },
+      "F": {
+       "quarter_beats_in_bar": 4,
+       "tempo_bpm": 142,
+       "grid": "thirty-second notes",
+       "counting": "1 e + a | 1 (1/8) + a | 1 e + a | 1 e + a",
+       "mean_timing_error_ms": 7,
+       "max_timing_error_ms": 19,
+       "beats_with_tuplets": 0,
+       "distinct_played_onsets_merged": 0
+      }
+     }
+    }
+   }
+  ]
+ }
+]
