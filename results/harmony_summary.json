@@ -1,0 +1,66 @@
+{
+ "test": {
+  "n": 240,
+  "truth_in_chord_options": 0.796,
+  "input_tokens_per_request": 4007,
+  "latency_p50_s": 0.344,
+  "code": {
+   "chord_top1": 0.275,
+   "chord_top3": 0.471,
+   "voicing_given_chord_top1": 0.304,
+   "voicing_given_chord_top3": 0.588,
+   "exact_top1": 0.075
+  },
+  "jev": {
+   "chord_top1": 0.129,
+   "chord_top3": 0.263,
+   "voicing_given_chord_top1": 0.283,
+   "voicing_given_chord_top3": 0.542,
+   "exact_top1": 0.046
+  },
+  "jev+code": {
+   "chord_top1": 0.275,
+   "chord_top3": 0.471,
+   "voicing_given_chord_top1": 0.304,
+   "voicing_given_chord_top3": 0.588,
+   "exact_top1": 0.075
+  }
+ },
+ "dev": {
+  "n": 120,
+  "truth_in_chord_options": 0.867,
+  "input_tokens_per_request": 4015,
+  "latency_p50_s": 0.341,
+  "code": {
+   "chord_top1": 0.283,
+   "chord_top3": 0.467,
+   "voicing_given_chord_top1": 0.483,
+   "voicing_given_chord_top3": 0.675,
+   "exact_top1": 0.158
+  },
+  "jev": {
+   "chord_top1": 0.15,
+   "chord_top3": 0.275,
+   "voicing_given_chord_top1": 0.292,
+   "voicing_given_chord_top3": 0.633,
+   "exact_top1": 0.033
+  },
+  "jev+code": {
+   "chord_top1": 0.283,
+   "chord_top3": 0.467,
+   "voicing_given_chord_top1": 0.483,
+   "voicing_given_chord_top3": 0.675,
+   "exact_top1": 0.158
+  }
+ },
+ "weights": {
+  "a_chord": 0.0,
+  "b_voicing": 0.0,
+  "voicing_tau": 4.0
+ },
+ "setup": {
+  "chord_options": 15,
+  "voicing_options": 8,
+  "train_chorales": 256
+ }
+}

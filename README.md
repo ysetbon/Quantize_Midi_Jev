@@ -116,6 +116,30 @@ python3 -m jevquant passage perf.mid --bpm 120 --start 12.5 --end 21 [--timesig 
 - **Re-quantize bar by bar once the bar lines are fixed.** That stops one slip from spreading (rounds 1–2 got 77% of single bars exact with known downbeats).
 - **Use more dev passages.** The code scorer scored 59% upbeats on dev but 25% on eval, which means 39 dev passages are too few to train it.
 
+### Side experiment: next harmony + exact voicing (Bach chorales)
+
+**Task:** given the key and the last few chords as exact notes, suggest the next chord and its exact four notes, bass to soprano. Data and pipeline:
+- **Data:** 359 four-voice Bach chorales from music21: 256 to train the code model, 34 to tune weights (dev), 69 to test, with no chorale in more than one set.
+- **Code proposes:** a 3-chord-history (trigram) model of chord sequences ranks the candidate next chords. For each chord, every legal voicing is listed: in range, sensible spacing, no parallel fifths or octaves. These are ranked by how smoothly each voice moves.
+- **Jev picks:** chord options in words ("dominant seventh, first inversion, F# in the bass") and voicings as note names with each voice's motion. One request per position (`jevharmony/`, `scripts/run_harmony.py`).
+
+| 240 test positions | Next chord: top pick right | In top 3 | Voicing right (chord given) | Chord and all 4 notes right |
+|---|---|---|---|---|
+| Code (trigram + smoothest legal voicing) | **28%** | **47%** | **30%** | **8%** |
+| Jev (code's top 15 chords and top 8 voicings) | 13% | 26% | 28% | 5% |
+| Jev + code, weights tuned on dev | 28% | 47% | 30% | 8% (both Jev weights tuned to 0) |
+
+**What this shows:**
+- A trigram trained on 256 chorales knows Bach's chord habits better than Jev does.
+- On exact voicings, Jev is about as good as "smoothest legal voicing", but it doesn't add to it.
+- Even Jev's confident chord answers (confidence ≥ 0.5) were right 13 times out of 61, against 19 for code on the same positions.
+- **Cost:** about 4.0k input tokens per request, 0.34 s median.
+
+```bash
+python3 scripts/run_harmony.py
+python3 -m jevharmony --key "A major" --chords "E3 C#4 G#4 E5 | F#3 C#4 A4 D5 | A3 C#4 E4 C#5 | E3 D4 G#4 B4"
+```
+
 ## How it works
 
 Jev answers classification questions (yes/no, choice, score); it can't write
