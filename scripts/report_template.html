@@ -141,6 +141,18 @@ header { display: grid; gap: 1rem; }
 table.mini { border-collapse: collapse; font-size: .9rem; }
 table.mini td, table.mini th { padding: .3rem .8rem .3rem 0; text-align: left; border-bottom: 1px solid var(--rule); }
 table.mini td.num { text-align: right; }
+
+.nvrow { grid-template-columns: minmax(9rem, 13rem) minmax(0, 1fr) 4.5rem 4.5rem 5.5rem 5.5rem; }
+@media (max-width: 44rem) { .nvrow { grid-template-columns: minmax(0, 1fr) 4rem 4rem; } }
+.cwrap { overflow-x: auto; }
+table.cgrid { border-collapse: separate; border-spacing: 2px; font-size: .78rem; font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+table.cgrid th { font-weight: 500; color: var(--ink-2); padding: .2rem .35rem; white-space: nowrap; }
+table.cgrid thead th { writing-mode: vertical-rl; transform: rotate(180deg); text-align: left; height: 7.5rem; vertical-align: bottom; }
+table.cgrid tbody th { text-align: right; }
+table.cgrid td { width: 2.1rem; height: 2.1rem; text-align: center; border-radius: 3px; color: var(--ink); background: var(--surface); border: 1px solid var(--rule); }
+table.cgrid td.diag { border: 1.5px solid var(--ink-3); }
+table.cgrid td.dark { color: var(--surface); }
+.axis-note { font-size: var(--step--1); color: var(--ink-3); }
 @media (prefers-reduced-motion: no-preference) { .track .bar { transition: width .35s ease; } }
 </style>
 
@@ -165,6 +177,17 @@ table.mini td.num { text-align: right; }
     <div class="legend"><span><i style="background:var(--accent)"></i>Jev</span><span><i style="background:var(--neutral-bar)"></i>Comparison methods</span><span><i style="border:1.5px dashed var(--ink-3)"></i>Best option in the list</span></div>
   </section>
 
+
+  <section aria-labelledby="nv-h">
+    <div class="staff" aria-hidden="true"></div>
+    <h2 id="nv-h">Round 2: Jev names every note</h2>
+    <p class="muted">Here Jev got the bar's notes instead of ready-made options: pitches, when each note starts, the gap to the next note in ms and how long each key was held. It answered one question per note: which written value is it, from a whole note down to a 32nd, including triplets, sextuplets and grace notes. "Fit to bar" keeps Jev's answers but makes the values add up to exactly one bar. The time signature was given, and all of a bar's answers came back in one request.</p>
+    <div class="board" id="nvboard" role="table" aria-label="Round 2 results by method"></div>
+    <p class="small muted" id="nv-text"></p>
+    <h3>Which note values Jev mixes up</h3>
+    <p class="small muted">Counts over all notes in the 30 bars for "Jev, fit to bar". Rows are the written value, columns are Jev's answer; the outlined diagonal is right.</p>
+    <div class="cwrap"><table class="cgrid" id="confusion"></table></div>
+  </section>
   <section aria-labelledby="calib-h">
     <div class="staff" aria-hidden="true"></div>
     <h2 id="calib-h">Jev knows when it is guessing</h2>
@@ -220,11 +243,11 @@ table.mini td.num { text-align: right; }
   const sk = row("meter_known", "sonnet-5.5 (subagents)");
   $("lede").textContent =
     `With the time signature given, Jev picked the exact notation for ${jk.exact} of 30 bars. A tuned plain-code rule got ${hk.exact} and Sonnet 5.5 got ${sk.exact}; the best option on the list was right for ${ok.exact}. ` +
-    `Jev answered in about ${Math.round(jk.p50 * 1000)} ms and used about ${jk.tokens.toLocaleString()} input tokens per bar. It needs code to do the timing arithmetic first: given only raw note times, it got ${row("meter_known", "jev_blind[jev-latest]").exact} with the time signature and ${row("meter_unknown", "jev_blind[jev-latest]").exact} without.`;
+    `Jev answered in about ${Math.round(jk.p50 * 1000)} ms and used about ${jk.tokens.toLocaleString()} input tokens per bar. Asked to name every note's value itself, with code only making the values fill the bar, Jev got ${D.notevalues.rows.find((r) => r.name === "Jev, fit to bar").exact}, and ${D.notevalues.rows[0].exact} when combined with code's timing model. When choosing whole-bar options, it needed code to do the timing arithmetic first: given only raw note times, it got ${row("meter_known", "jev_blind[jev-latest]").exact} with the time signature and ${row("meter_unknown", "jev_blind[jev-latest]").exact} without.`;
   const v = [
     { q: "Fast?", a: `${Math.round(jk.p50 * 1000)} ms`, s: `Median per bar, ${Math.round(jk.p95 * 1000)} ms at p95. Sonnet agents took about ${D.sonnet.seconds_per_bar} s per bar.`, t: ["yes", "Yes"] },
-    { q: "Cheap?", a: `${(jk.tokens / 1000).toFixed(1)}k tokens`, s: `Input tokens per bar; output tokens are free. Sonnet agents used about ${(D.sonnet.tokens_per_bar_incl_agent_overhead / 1000).toFixed(1)}k per bar. Jev's per-token price isn't published here.`, t: ["yes", "Likely, check your price"] },
-    { q: "Good?", a: `${jk.exact}/30 bars`, s: `About as good as a hand-tuned rule (${hk.exact}) and Sonnet 5.5 (${sk.exact}), with no tuning. Without the time signature it drops to ${ju.exact}/30 (rule: ${hu.exact}).`, t: ["mid", "Comparable, not better"] },
+    { q: "Cheap?", a: `${(jk.tokens / 1000).toFixed(1)}k tokens`, s: `Input tokens per bar when picking options; naming each note costs about ${(D.notevalues.rows[0].tokens / 1000).toFixed(1)}k. Output tokens are free. Sonnet agents used about ${(D.sonnet.tokens_per_bar_incl_agent_overhead / 1000).toFixed(1)}k per bar. Jev's per-token price isn't published here.`, t: ["yes", "Likely, check your price"] },
+    { q: "Good?", a: `${jk.exact}–${D.notevalues.rows[0].exact}/30 bars`, s: `Picking options: ${jk.exact}, vs a tuned rule ${hk.exact} and Sonnet 5.5 ${sk.exact}. Naming each note: ${D.notevalues.rows.find((r) => r.name === "Jev, fit to bar").exact}, ${D.notevalues.rows[0].exact} with code's timing model. Without the time signature, option picking drops to ${ju.exact}/30.`, t: ["mid", "As good as tuned code"] },
   ];
   $("verdict").innerHTML = v.map((x) => `<div><span class="q">${x.q}</span><span class="a">${esc(x.a)}</span><span class="tag ${x.t[0]}">${x.t[0] === "yes" ? "✓" : "≈"} ${esc(x.t[1])}</span><span class="small muted">${esc(x.s)}</span></div>`).join("");
 
@@ -275,7 +298,7 @@ table.mini td.num { text-align: right; }
   }
 
   // ----- bars
-  const ORDER = [["jev_choice[jev-latest]", "Jev"], ["heuristic", "Plain-code rule"], ["sonnet-5.5 (subagents)", "Sonnet 5.5"]];
+  const ORDER = [["jev_choice[jev-latest]", "Jev, picks option"], ["Jev (raw) + bar fit", "Jev, note by note"], ["Jev (raw) x timing model + bar fit", "Jev × timing model"], ["heuristic", "Plain-code rule"], ["sonnet-5.5 (subagents)", "Sonnet 5.5"]];
   function renderFilters() {
     const opts = [["all", "All pieces"], ...Object.entries(PIECES)];
     $("filters").innerHTML = opts.map(([k, l]) => `<button type="button" class="chip" data-p="${k}" aria-pressed="${piece === k}">${esc(l)}</button>`).join("") +
@@ -324,6 +347,41 @@ table.mini td.num { text-align: right; }
     box.querySelectorAll(".osmd").forEach((el, i) => items[i][1] && draw(el, items[i][1]));
   }
 
+
+  // ----- round 2: note values
+  const NVL = { whole: "whole", dotted_half: "dotted half", half: "half", dotted_quarter: "dotted quarter", quarter: "quarter", dotted_eighth: "dotted eighth", triplet_quarter: "triplet quarter", eighth: "eighth", triplet_eighth: "triplet eighth", sixteenth: "16th", sextuplet: "sextuplet 16th", thirty_second: "32nd", grace: "grace note" };
+  function renderNV() {
+    const N = D.notevalues;
+    let h = `<div class="brow nvrow head" role="row"><div role="columnheader">Method</div><div role="columnheader">Exact bars (of 30)</div><div class="num" role="columnheader">Notes right</div><div class="num" role="columnheader">Values right</div><div class="num hide-sm" role="columnheader">Median time</div><div class="num hide-sm" role="columnheader">Tokens/bar</div></div>`;
+    for (const r of N.rows) {
+      const w = (r.exact / 30) * 100;
+      h += `<div class="brow nvrow" role="row"><div class="name" role="cell">${esc(r.name)}<span class="kind">${KIND[r.kind]}</span></div>
+        <div class="track" role="cell"><div class="bar ${r.kind === "jev" ? "jev" : ""}" style="width:${w}%"></div><span class="lab" style="left:calc(${w}% + 6px)">${r.exact}</span></div>
+        <div class="num" role="cell">${(r.onset_acc * 100).toFixed(0)}%</div>
+        <div class="num" role="cell">${(r.value_acc * 100).toFixed(0)}%</div>
+        <div class="num hide-sm" role="cell">${r.p50 ? Math.round(r.p50 * 1000) + " ms" : "<1 ms"}</div>
+        <div class="num hide-sm" role="cell">${r.tokens ? r.tokens.toLocaleString() : "–"}</div></div>`;
+    }
+    $("nvboard").innerHTML = h;
+    const jf = N.rows.find((r) => r.name === "Jev, fit to bar"), jt = N.rows.find((r) => r.name === "Jev, top answer per note"), cf = N.rows.find((r) => r.name === "Code timing model, fit to bar"), jb = N.rows.find((r) => r.name.startsWith("Jev given beat"));
+    $("nv-text").textContent = `Jev's own answers, summed as given, filled the bar exactly in only ${jt.fills} of 30 bars, so the bar-length fit matters. Giving Jev the gap in beats as well as ms made it worse (${jb.exact}/30). Asking per note costs about ${N.rows[0].tokens_per_note} input tokens per note, about ${(jf.tokens / 1000).toFixed(1)}k per bar (${N.groups_per_bar} onsets on average), roughly four times round 1. The code timing model was tuned on the 150 dev bars and reached ${cf.exact}/30.`;
+    const order = Object.keys(NVL);
+    const present = order.filter((k) => N.confusion.some(([a, b]) => a === k || b === k));
+    const cnt = {}; let max = 1;
+    for (const [a, b, n] of N.confusion) { cnt[a + "|" + b] = n; if (a !== b) max = Math.max(max, n); }
+    let t = `<thead><tr><th></th>${present.map((k) => `<th scope="col">${esc(NVL[k])}</th>`).join("")}</tr></thead><tbody>`;
+    for (const a of present) {
+      t += `<tr><th scope="row">${esc(NVL[a])}</th>`;
+      for (const b of present) {
+        const n = cnt[a + "|" + b] || 0;
+        const share = a === b ? 0 : Math.round((n / max) * 70);
+        const bg = n && a !== b ? `background:color-mix(in srgb, var(--accent) ${share + 10}%, var(--surface))` : "";
+        t += `<td class="${a === b ? "diag" : ""} ${share > 45 ? "dark" : ""}" style="${bg}" title="written ${esc(NVL[a])}, Jev wrote ${esc(NVL[b])}: ${n}">${n || ""}</td>`;
+      }
+      t += `</tr>`;
+    }
+    $("confusion").innerHTML = t + `</tbody>`;
+  }
   // ----- notes
   const notes = [
     `30 bars is a small sample: one bar more or less is 3 points, so differences of one or two bars between Jev, Sonnet and the rule are within noise.`,
@@ -345,6 +403,7 @@ table.mini td.num { text-align: right; }
   $("s-known").onclick = () => setSetting("meter_known");
   $("s-unknown").onclick = () => setSetting("meter_unknown");
   renderFilters();
+  renderNV();
   setSetting("meter_known");
 })();
 </script>

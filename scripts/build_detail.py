@@ -14,6 +14,8 @@ SHOW = {"heuristic": "Plain-code rule", "jev_choice[jev-latest]": "Jev", "sonnet
 
 ev = json.load(open("data/eval_bars.json"))
 records = [json.loads(l) for l in open("results/records.jsonl")]
+NV = {(r["id"], r["selector"]): r for r in map(json.loads, open("results/notevalues_records.jsonl"))}
+NV_SHOW = {"Jev (raw) + bar fit": "Jev, note by note", "Jev (raw) x timing model + bar fit": "Jev x timing model"}
 rec = {(r["setting"], r["id"], r["selector"]): r for r in records}
 chunks = load_bars(ev["eval_ids"])
 out = []
@@ -50,6 +52,13 @@ for setting in ("meter_unknown", "meter_known"):
             if sel in ("jev_choice[jev-latest]", "heuristic"):
                 p["xml"] = to_musicxml(bar_score(quantized_notes(ch, c, pr["idx"]), ts))
             picks[sel] = p
+        if setting == "meter_known":
+            n_q = int(F(m["bar_quarters"]))
+            for sel, name in NV_SHOW.items():
+                r = NV.get((bid, sel))
+                if r:
+                    picks[sel] = {"name": name, "exact": r["exact"], "onset_acc": round(r["onset_acc"], 3), "meter_ok": True,
+                                  "counting": counting([F(p) for p in r["positions"]], n_q), "timesig": m["timesig"]}
         item["settings"][setting] = {
             "truth_in_options": pr["truth_in_shortlist"], "n_options": len(pr["options"]), "picks": picks,
         }

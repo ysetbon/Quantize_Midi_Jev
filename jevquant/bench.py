@@ -37,10 +37,14 @@ def load_bars(ids: list[str], root: str = "data/asap"):
 
 def score(chunk, c: Candidate, idx: list[int]) -> dict:
     """Accuracy of candidate ``c`` against the chunk's ground truth (matched notes)."""
+    return score_positions(chunk, c.q, idx, F(c.feats["quarters_per_bar"]))
+
+
+def score_positions(chunk, group_pos: list[F], idx: list[int], n_pred: F) -> dict:
+    """Accuracy of predicted onset-group positions (``idx`` maps note -> group)."""
     n_true = F(chunk.meta["bar_quarters"])
-    n_pred = F(c.feats["quarters_per_bar"])
     scale = n_pred / n_true
-    pairs = [(c.q[idx[i]], t.onset) for i, t in enumerate(chunk.truth) if t is not None]
+    pairs = [(group_pos[idx[i]], t.onset) for i, t in enumerate(chunk.truth) if t is not None]
     strict = sum(p == t for p, t in pairs) / len(pairs)
     scaled = sum(p / scale == t for p, t in pairs) / len(pairs)
     return {"meter_ok": n_pred == n_true, "onset_acc": strict, "onset_acc_any_beat_unit": scaled,

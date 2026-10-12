@@ -32,6 +32,32 @@ renders every bar as notation for the written score, Jev's choice and the rule's
 
 Total Jev usage for the benchmark was 360 requests and about 551k input tokens.
 
+### Round 2: Jev names every note's value
+
+Here Jev gets the bar's notes directly, not ready-made options:
+- pitches
+- start time, in ms after the downbeat
+- the gap to the next note, in ms
+- how long each key was held
+
+It answers one `choice` question per onset: whole note, dotted half, half, dotted quarter, quarter, dotted eighth, triplet quarter (1/6 of a whole note), eighth, triplet eighth (1/12), 16th, sextuplet 16th, 32nd, or grace note. One request covers a whole bar (`jevquant/notevalues.py`, `scripts/run_notevalues.py`). The time signature is given.
+
+| 30 bars, time signature given | Bars exact | Notes right | Values right | Input tokens/bar |
+|---|---|---|---|---|
+| **Jev × code timing model, fit to bar** | **23/30** | 88% | 93% | 4,191 |
+| **Jev, fit to bar** | **22/30** | 88% | 91% | 4,191 |
+| Jev, top answer per note (no fit) | 18/30 | 79% | 87% | 4,191 |
+| Jev given the gap in beats too, fit to bar | 19/30 | 86% | 87% | 4,352 |
+| Code timing model (tuned on dev bars), fit to bar | 22/30 | 87% | 90% | – |
+| Code, nearest value | 10/30 | 66% | 75% | – |
+
+"Fit to bar" means a small dynamic program keeps Jev's per-note probabilities but forces the values to add up to exactly one bar. Jev's own top answers filled the bar in only 16 of 30 bars.
+
+- **Accuracy:** naming notes is Jev's best mode. It got 22/30 on its own, vs 20/30 when picking whole-bar options. Combined with the code's timing model it got 23/30, the best of any method tested. Differences of one bar are within noise on 30 bars.
+- **Input format:** raw milliseconds worked better than also giving the gap in beats (22 vs 19).
+- **Mistakes:** Jev's errors are mostly 16th vs 32nd, sextuplet vs 16th, and grace notes vs 16ths.
+- **Cost:** about 540 input tokens per note, or about 4.2k per bar, roughly 4× round 1. Speed is unchanged at about 0.36 s per bar.
+
 ## How it works
 
 Jev answers classification questions (yes/no, choice, score); it can't write
@@ -79,6 +105,7 @@ pip install -r requirements.txt
 python3 scripts/build_bar_pool.py          # fetch ASAP subset + list all bars
 python3 scripts/run_bench.py               # baselines + Jev (cached in .jev_cache/)
 python3 scripts/score_sonnet.py results/sonnet_workflow_output.json
+python3 scripts/run_notevalues.py          # round 2: Jev names each note (cached)
 python3 scripts/build_detail.py && python3 scripts/page_data.py && python3 scripts/build_page.py
 python3 -m pytest -q tests
 

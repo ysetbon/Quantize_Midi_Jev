@@ -42,8 +42,27 @@ prev_same = all(idx[(st, i, "jev_choice[jev-latest]")]["label"] == idx[(st, i, "
                 for st in ("meter_unknown", "meter_known") for i in ids)
 jev_calls = sum(1 for r in R if r["selector"].startswith("jev_"))
 jev_tokens = sum(r["input_tokens"] for r in R if r["selector"].startswith("jev_"))
+NV = S.get("notevalues", {})
+NV_NAMES = [
+    ("Jev (raw) x timing model + bar fit", "Jev × code timing model, fit to bar", "jev"),
+    ("Jev (raw) + bar fit", "Jev, fit to bar", "jev"),
+    ("Jev (raw): top value per note", "Jev, top answer per note", "jev"),
+    ("Jev (beats) + bar fit", "Jev given beat ratios, fit to bar", "jev"),
+    ("code: timing model + bar fit", "Code timing model, fit to bar", "code"),
+    ("code: nearest value", "Code, nearest value", "code"),
+]
+nv_rows = []
+for key, name, kind in NV_NAMES:
+    s = NV.get("selectors", {}).get(key)
+    if s:
+        nv_rows.append({"name": name, "kind": kind, "exact": s["exact"], "onset_acc": s["onset_acc"], "value_acc": s["value_acc"],
+                        "fills": s["fills_bar"], "p50": s.get("p50"), "tokens": s.get("tokens"),
+                        "tokens_per_note": s.get("tokens_per_note_group")})
+conf = NV.get("selectors", {}).get("Jev (raw) + bar fit", {}).get("confusion", [])
 out = {"board": board, "calib": calib, "hybrid": hybrid, "coverage": S["coverage"], "sonnet": S["sonnet_run"],
        "jev_preview_same_choices": prev_same, "jev_calls": jev_calls, "jev_input_tokens_total": jev_tokens,
+       "notevalues": {"rows": nv_rows, "confusion": conf, "groups_per_bar": NV.get("groups_per_bar"),
+                      "code_model": NV.get("code_model")},
        "served_model": sorted({r["model"] for r in R if r.get("model")}), "bars": bars}
 json.dump(out, open("results/page_data.json", "w"))
 print(json.dumps({k: v for k, v in out.items() if k != "bars"}, indent=1)[:3000])
