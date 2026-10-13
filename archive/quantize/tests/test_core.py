@@ -123,3 +123,45 @@ def test_nearest_recovers_perfect_timing_and_state_lists_groups():
     g = groups_of(ch)
     assert decode_nearest(g) == [F(o) for o in onsets]
     assert len(build_state(ch, g, "raw")["onsets"]) == len(onsets)
+
+
+# ------------------------------------------------------------------ round 3: passages
+
+def _passage(onsets, ts, pickup, bpm=100.0, bass_every=None):
+    """Perfectly timed passage: written ``onsets`` (quarters from the first note)."""
+    from jevquant.phrase import bar_len
+    p = 60 / bpm
+    L = bar_len(ts)
+    perf, truth = [], []
+    for o in onsets:
+        o = F(o)
+        on_db = (o - pickup) % L == 0
+        pitch = 48 if on_db else 72
+        perf.append(PerfNote(pitch, float(o) * p, float(o) * p + 0.8 * p * 0.5, 90 if on_db else 60))
+        truth.append(ScoreNote(pitch, o - pickup, F(1, 2)))
+    return Chunk(perf=perf, truth=truth, meta={"timesig": ts, "qbpm": bpm, "id": "synthetic"})
+
+
+def test_tracker_recovers_waltz_with_pickup():
+    from jevquant.phrase import evaluate, hypotheses
+    # 3/4, pickup of one quarter, then quarter-eighth-eighth-quarter patterns for 4 bars
+    bar = [0, 1, F(3, 2), 2]
+    onsets = [0] + [1 + 3 * b + x for b in range(4) for x in bar]
+    ch = _passage(onsets, "3/4", F(1))
+    hs, cl = hypotheses(ch, meters=("3/4",), qbpm=100.0)
+    best = min(hs, key=lambda h: h.feats["dp_cost"] - 3 * h.feats["db_bass"])
+    e = evaluate(ch, best, cl)
+    assert e["gap_acc"] == 1.0
+    assert any(evaluate(ch, h, cl)["exact"] for h in hs)
+
+
+def test_starts_cover_half_beats_and_compound_eighths():
+    from jevquant.tracker import starts
+    assert starts(F(3), F(1)) == [F(0), F(1, 2), F(1), F(3, 2), F(2), F(5, 2)]
+    assert starts(F(3), F(3, 2)) == [F(0), F(1, 2), F(1), F(3, 2), F(2), F(5, 2)]
+    assert starts(F(4), F(2))[:3] == [F(0), F(1), F(2)]
+
+
+def test_beat_unit():
+    from jevquant.passage import beat_unit
+    assert beat_unit("6/8") == F(3, 2) and beat_unit("3/8") == F(1, 2) and beat_unit("2/2") == F(2)

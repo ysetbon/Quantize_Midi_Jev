@@ -21,15 +21,30 @@ PIECES = {
     "K332-1": "Mozart/Piano_Sonatas/12-1",  # 3/4
     "K310-1": "Mozart/Piano_Sonatas/8-1",   # 4/4
 }
+# extra pieces for the 4-bar passage benchmark (round 3): wider range of meters and pickups
+PASSAGE_PIECES = PIECES | {
+    "K332-2": "Mozart/Piano_Sonatas/12-2",                # 4/4 Adagio
+    "K332-3": "Mozart/Piano_Sonatas/12-3",                # 6/8
+    "Hob49-1": "Haydn/Keyboard_Sonatas/49-1",             # 3/4, pickup
+    "Hob39-1": "Haydn/Keyboard_Sonatas/39-1",             # 2/4
+    "Op54-1": "Beethoven/Piano_Sonatas/22-1",             # 3/4, pickup
+    "Op22-3": "Beethoven/Piano_Sonatas/11-3",             # 3/4 minuet, pickup
+    "Ballade2": "Chopin/Ballades/2",                      # 6/8, pickup
+    "D899-2": "Schubert/Impromptu_op.90_D.899/2",         # 3/4, triplets, pickup
+    "BWV856": "Bach/Fugue/bwv_856",                       # 3/8, pickup
+    "BWV874": "Bach/Fugue/bwv_874",                       # 2/2
+}
 EARLY = 0.07  # performed notes may anticipate the downbeat by this much (s)
 
 
-def fetch(root: str = "data/asap") -> str:
-    """Sparse-clone only the Mozart folders we use."""
+def fetch(root: str = "data/asap", pieces: dict = PIECES) -> str:
+    """Sparse-clone only the folders we use (adds folders to an existing clone)."""
     if not os.path.isdir(root):
         os.makedirs(os.path.dirname(root) or ".", exist_ok=True)
         subprocess.run(["git", "clone", "-q", "--depth", "1", "--filter=blob:none", "--sparse", REPO, root], check=True)
-        subprocess.run(["git", "-C", root, "sparse-checkout", "set", *PIECES.values()], check=True)
+    have = subprocess.run(["git", "-C", root, "sparse-checkout", "list"], capture_output=True, text=True).stdout.split()
+    if not set(pieces.values()) <= set(have):
+        subprocess.run(["git", "-C", root, "sparse-checkout", "set", *sorted(set(have) | set(pieces.values()))], check=True)
     return root
 
 
@@ -47,7 +62,7 @@ def read_annotations(path: str) -> list[tuple[float, bool, str | None]]:
 
 
 def performers(root: str, piece: str) -> list[str]:
-    d = os.path.join(root, PIECES[piece])
+    d = os.path.join(root, PASSAGE_PIECES[piece])
     return sorted(f[:-4] for f in os.listdir(d) if f.endswith(".mid") and f != "midi_score.mid")
 
 
